@@ -1,0 +1,92 @@
+public static native long doubleToRawLongBits(double value);
+public static native double longBitsToDouble(long bits);
+public static native int floatToRawIntBits(float value);
+public static native float intBitsToFloat(int bits);
+public static native int getLength(Object array)
+public static native Object get(Object array, int index)
+public static native boolean getBoolean(Object array, int index)
+jublic static native byte getByte(Object array, int index)
+public static native char getChar(Object array, int index)
+public static native short getShort(Object array, int index)
+public static native int getInt(Object array, int index)
+public static native long getLong(Object array, int index)
+public static native float getFloat(Object array, int index)
+public static native double getDouble(Object array, int index)
+public static native void set(Object array, int index, Object value)
+public static native void setBoolean(Object array, int index, boolean z)
+public static native void setByte(Object array, int index, byte b)
+public static native void setChar(Object array, int index, char c)
+public static native void setShort(Object array, int index, short s)
+public static native void setInt(Object array, int index, int i)
+public static native void setLong(Object array, int index, long l)
+public static native void setFloat(Object array, int index, float f)
+public static native void setDouble(Object array, int index, double d)
+public static native double sin(double a);
+public static native double cos(double a);
+public static native double tan(double a);
+public static native double asin(double a);
+public static native double acos(double a);
+public static native double atan(double a);
+public static native double log(double a);
+public static native double log10(double a);
+public static native double sqrt(double a);
+public static native double IEEEremainder(double f1, double f2);
+public static native double atan2(double y, double x);
+public static native double sinh(double x);
+public static native double cosh(double x);
+public static native double tanh(double x);
+public static native double expm1(double x);
+public static native double log1p(double x);
+public static native long currentTimeMillis();
+public static native long nanoTime();
+public static native void arraycopy(Object src,  int  srcPos,
+public static native int identityHashCode(Object x);
+public static native String mapLibraryName(String libname);
+public static native Thread currentThread();
+public static native void yield();
+public static native void sleep(long millis) throws InterruptedException;
+public static native boolean holdsLock(Object obj);
+public static native <T> T doPrivileged(PrivilegedAction<T> action);
+public static native <T> T doPrivileged(PrivilegedAction<T> action,
+public static native <T> T
+public static native <T> T
+public static native long getuid();
+public static native long geteuid();
+public static native long getgid();
+public static native long getegid();
+public static native long getNanoTimeAdjustment(long offsetInSeconds);
+public static native String[] getRuntimeArguments();
+public static native Class<?> getCallerClass();
+public static native Class<?> getCallerClass(int depth);
+public static native int getClassAccessFlags(Class<?> c);
+public static native String getVMTemporaryDirectory();
+public static native void configureBlocking(FileDescriptor fd,
+public static native int fdVal(FileDescriptor fd);
+public static native long current();
+public static native void signal(long nt);
+public static native SurfaceData getSurfaceData(BufferedImage bufImg);
+public static native void nativeSetAllowsCursorSetInBackground(final boolean allows);
+public static native boolean isEmbedded();
+public static native int transformBI(BufferedImage src, BufferedImage dst,
+public static native int transformRaster(Raster src, Raster dst,
+public static native int convolveBI(BufferedImage src, BufferedImage dst,
+public static native int convolveRaster(Raster src, Raster dst,
+public static native int lookupByteBI(BufferedImage src, BufferedImage dst,
+public static native int lookupByteRaster(Raster src, Raster dst,
+public static native void closeSplashScreen();
+public static native void colorConvert(LCMSTransform trans,
+public static native void initLCMS(Class<?> Trans, Class<?> IL, Class<?> Pf);
+public static native void invokeNativeDispose(long disposerMethodPointer,
+public static native void initIDs();
+public static native void initIDs();
+public static native int getFontConfigVersion();
+public static native boolean isDgaAvailable();
+public static native boolean isVistaOS();
+public static native boolean isThemed();
+public static native boolean isGetThemeTransitionDurationDefined();
+public static native boolean embeddedInit();
+public static native boolean embeddedDispose();
+public static native boolean updateWindowAccelImpl(long pd3dsd, long pData,
+public static native int getDefaultPixFmt(int screennum);
+public static native boolean updateWindowAccelImpl(long psdops,
+public static native long maxObjectInspectionAge();

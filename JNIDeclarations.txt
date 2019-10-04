@@ -1,0 +1,1320 @@
+macosx/classes/apple/laf/JRSUIConstants.java:40:    private static native long getPtrForConstant(final int constant);
+macosx/classes/apple/laf/JRSUIControl.java:34:    private static native int initNativeJRSUI();
+macosx/classes/apple/laf/JRSUIControl.java:36:    private static native long getPtrOfBuffer(ByteBuffer byteBuffer);
+macosx/classes/apple/laf/JRSUIControl.java:37:    private static native long getCFDictionary(boolean flipped);
+macosx/classes/apple/laf/JRSUIControl.java:38:    private static native void disposeCFDictionary(long cfDictionaryPtr);
+macosx/classes/apple/laf/JRSUIControl.java:40:    private static native int syncChanges(long cfDictionaryPtr, long byteBufferPtr);
+macosx/classes/apple/laf/JRSUIControl.java:45:    private static native int paintToCGContext(long cgContext,    long cfDictionaryPtr, long oldProperties, long newProperties, double x, double y, double w, double h);
+macosx/classes/apple/laf/JRSUIControl.java:46:    private static native int paintChangesToCGContext(long cgContext,    long cfDictionaryPtr, long oldProperties, long newProperties, double x, double y, double w, double h, long byteBufferPtr);
+macosx/classes/apple/laf/JRSUIControl.java:48:    private static native int paintImage(int[] data, int imgW, int imgH,    long cfDictionaryPtr, long oldProperties, long newProperties, double x, double y, double w, double h);
+macosx/classes/apple/laf/JRSUIControl.java:49:    private static native int paintChangesImage(int[] data, int imgW, int imgH,    long cfDictionaryPtr, long oldProperties, long newProperties, double x, double y, double w, double h, long byteBufferPtr);
+macosx/classes/apple/laf/JRSUIControl.java:51:    private static native int getNativeHitPart(long cfDictionaryPtr, long oldProperties, long newProperties, double x, double y, double w, double h, double hitX, double hitY);
+macosx/classes/apple/laf/JRSUIControl.java:52:    private static native void getNativePartBounds(final double[] rect,    long cfDictionaryPtr, long oldProperties, long newProperties, double x, double y, double w, double h, int part);
+macosx/classes/apple/laf/JRSUIControl.java:53:    private static native double getNativeScrollBarOffsetChange(long cfDictionaryPtr, long oldProperties, long newProperties, double x, double y, double w, double h, int offset, int visibleAmount, int extent);
+macosx/classes/apple/laf/JRSUIFocus.java:38:    private static native int beginNativeFocus(final long cgContext, final int ringStyle);
+macosx/classes/apple/laf/JRSUIFocus.java:39:    private static native int endNativeFocus(final long cgContext);
+macosx/classes/apple/laf/JRSUIUtils.java:99:        private static native boolean shouldUseScrollToClick();
+macosx/classes/com/apple/eawt/Application.java:77:    private static native void nativeInitializeApplicationDelegate();
+macosx/classes/com/apple/eawt/_AppDockIconHandler.java:36:    private static native void nativeSetDockMenu(final long cmenu);
+macosx/classes/com/apple/eawt/_AppDockIconHandler.java:37:    private static native void nativeSetDockIconImage(final long image);
+macosx/classes/com/apple/eawt/_AppDockIconHandler.java:38:    private static native void nativeSetDockIconProgress(final int value);
+macosx/classes/com/apple/eawt/_AppDockIconHandler.java:39:    private static native long nativeGetDockIconImage();
+macosx/classes/com/apple/eawt/_AppDockIconHandler.java:40:    private static native void nativeSetDockIconBadge(final String badge);
+macosx/classes/com/apple/eawt/_AppEventHandler.java:91:    private static native void nativeOpenCocoaAboutWindow();
+macosx/classes/com/apple/eawt/_AppEventHandler.java:92:    private static native void nativeReplyToAppShouldTerminate(final boolean shouldTerminate);
+macosx/classes/com/apple/eawt/_AppEventHandler.java:93:    private static native void nativeRegisterForNotification(final int notification);
+macosx/classes/com/apple/eawt/_AppMenuBarHandler.java:47:    private static native void nativeSetMenuState(final int menu, final boolean visible, final boolean enabled);
+macosx/classes/com/apple/eawt/_AppMenuBarHandler.java:48:    private static native void nativeSetDefaultMenuBar(final long menuBarPeer);
+macosx/classes/com/apple/eawt/_AppMiscHandlers.java:31:    private static native void nativeOpenHelpViewer();
+macosx/classes/com/apple/eawt/_AppMiscHandlers.java:33:    private static native void nativeRequestActivation(final boolean allWindows);
+macosx/classes/com/apple/eawt/_AppMiscHandlers.java:34:    private static native void nativeRequestUserAttention(final boolean critical);
+macosx/classes/com/apple/eawt/_AppMiscHandlers.java:36:    private static native void nativeEnableSuddenTermination();
+macosx/classes/com/apple/eawt/_AppMiscHandlers.java:37:    private static native void nativeDisableSuddenTermination();
+macosx/classes/com/apple/eio/FileManager.java:140:        private static native void _setFileTypeAndCreator(String filename, int type, int creator) throws IOException;
+macosx/classes/com/apple/eio/FileManager.java:154:    private static native void _setFileType(String filename, int type) throws IOException;
+macosx/classes/com/apple/eio/FileManager.java:168:    private static native void _setFileCreator(String filename, int creator) throws IOException;
+macosx/classes/com/apple/eio/FileManager.java:182:    private static native int _getFileType(String filename) throws IOException;
+macosx/classes/com/apple/eio/FileManager.java:196:    private static native int _getFileCreator(String filename) throws IOException;
+macosx/classes/com/apple/eio/FileManager.java:262:    private static native String _findFolder(short domain, int folderType, boolean createIfNeeded);
+macosx/classes/com/apple/eio/FileManager.java:286:    private static native void _openURL(String url) throws IOException;
+macosx/classes/com/apple/eio/FileManager.java:329:        private static native String getNativeResourceFromBundle(String resourceName, String subDirName, String type) throws FileNotFoundException;
+macosx/classes/com/apple/eio/FileManager.java:354:        private static native String getNativePathToApplicationBundle();
+macosx/classes/com/apple/eio/FileManager.java:376:        private static native boolean _moveToTrash(String fileName);
+macosx/classes/com/apple/eio/FileManager.java:399:        private static native boolean _revealInFinder(String fileName);
+macosx/classes/com/apple/laf/AquaFileView.java:71:    private static native String getNativePathToSharedJDKBundle();
+macosx/classes/com/apple/laf/AquaFileView.java:73:    private static native String getNativeMachineName();
+macosx/classes/com/apple/laf/AquaFileView.java:74:    private static native String getNativeDisplayName(final byte[] pathBytes, final boolean isDirectory);
+macosx/classes/com/apple/laf/AquaFileView.java:75:    private static native int getNativeLSInfo(final byte[] pathBytes, final boolean isDirectory);
+macosx/classes/com/apple/laf/AquaFileView.java:76:    private static native String getNativePathForResolvedAlias(final byte[] absolutePath, final boolean isDirectory);
+macosx/classes/com/apple/laf/AquaNativeResources.java:64:    private static native long getWindowBackgroundColor();
+macosx/classes/com/apple/laf/ScreenMenu.java:55:    private static native long addMenuListeners(ScreenMenu listener, long nativeMenu);
+macosx/classes/com/apple/laf/ScreenMenu.java:56:    private static native void removeMenuListeners(long modelPtr);
+macosx/classes/sun/awt/CGraphicsConfig.java:52:    private static native Rectangle2D nativeGetBounds(int screen);
+macosx/classes/sun/awt/CGraphicsDevice.java:263:    private static native double nativeGetScaleFactor(int displayID);
+macosx/classes/sun/awt/CGraphicsDevice.java:265:    private static native void nativeSetDisplayMode(int displayID, int w, int h, int bpp, int refrate);
+macosx/classes/sun/awt/CGraphicsDevice.java:267:    private static native DisplayMode nativeGetDisplayMode(int displayID);
+macosx/classes/sun/awt/CGraphicsDevice.java:269:    private static native DisplayMode[] nativeGetDisplayModes(int displayID);
+macosx/classes/sun/awt/CGraphicsDevice.java:271:    private static native double nativeGetXResolution(int displayID);
+macosx/classes/sun/awt/CGraphicsDevice.java:273:    private static native double nativeGetYResolution(int displayID);
+macosx/classes/sun/awt/CGraphicsDevice.java:275:    private static native Insets nativeGetScreenInsets(int displayID);
+macosx/classes/sun/awt/CGraphicsEnvironment.java:46:    private static native int[] getDisplayIDs();
+macosx/classes/sun/awt/CGraphicsEnvironment.java:51:    private static native int getMainDisplayID();
+macosx/classes/sun/font/CCharToGlyphMapper.java:31:    private static native int countGlyphs(final long nativeFontPtr);
+macosx/classes/sun/font/CCharToGlyphMapper.java:134:    private static native void nativeCharsToGlyphs(int count, char[] unicodes, int[] glyphs)
+macosx/classes/sun/font/CFont.java:94:    private static native long createNativeFont(final String nativeFontName, final int style)
+macosx/classes/sun/font/CFont.java:96:    private static native void disposeNativeFont(final long nativeFontPtr);
+macosx/classes/sun/font/CFont.java:208:    static native void getCascadeList(long nativeFontPtr, ArrayList<String> listOfString);
+macosx/classes/sun/font/CStrike.java:37:    private static native long createNativeStrikePtr(long nativeFontPtr, double[] glyphTx, double[] invDevTxMatrix, int aaHint, int fmHint);
+macosx/classes/sun/font/CStrike.java:44:    private static native void disposeNativeStrikePtr(long nativeStrikePtr);
+macosx/classes/sun/font/CStrike.java:47:    private static native StrikeMetrics getFontMetrics(long nativeStrikePtr);
+macosx/classes/sun/font/CStrike.java:50:    private static native void getGlyphImagePtrsNative(long nativeStrikePtr,
+macosx/classes/sun/font/CStrike.java:56:    private static native float getNativeGlyphAdvance(long nativeStrikePtr,
+macosx/classes/sun/font/CStrike.java:60:    private static native GeneralPath getNativeGlyphOutline(long nativeStrikePtr,
+macosx/classes/sun/font/CStrike.java:66:    private static native void getNativeGlyphImageBounds(long nativeStrikePtr,
+macosx/classes/sun/font/CStrikeDisposer.java:89:    protected static native void removeGlyphInfoFromCache(long glyphInfo);
+macosx/classes/sun/java2d/CRenderer.java:39:    static native void init();
+macosx/classes/sun/java2d/opengl/CGLGraphicsConfig.java:80:    private static native boolean initCGL();
+macosx/classes/sun/java2d/opengl/CGLGraphicsConfig.java:81:    private static native long getCGLConfigInfo(int displayID, int visualnum,
+macosx/classes/sun/java2d/opengl/CGLGraphicsConfig.java:83:    private static native int getOGLCapabilities(long configInfo);
+macosx/classes/sun/java2d/opengl/CGLGraphicsConfig.java:91:    private static native int nativeGetMaxTextureSize();
+macosx/classes/sun/java2d/opengl/CGLLayer.java:43:    private static native void nativeSetScale(long layerPtr, double scale);
+macosx/classes/sun/java2d/opengl/CGLLayer.java:44:    private static native void validate(long layerPtr, CGLSurfaceData cglsd);
+macosx/classes/sun/java2d/opengl/CGLLayer.java:45:    private static native void blitTexture(long layerPtr);
+macosx/classes/sun/java2d/opengl/CGLSurfaceData.java:348:    private static native long createCGLContextOnSurface(CGLSurfaceData sd,
+macosx/classes/sun/java2d/opengl/CGLSurfaceData.java:362:    static native boolean makeCGLContextCurrentOnSurface(CGLSurfaceData sd,
+macosx/classes/sun/java2d/opengl/CGLSurfaceData.java:376:    private static native void destroyCGLContext(long ctx);
+macosx/classes/sun/java2d/OSXOffScreenSurfaceData.java:38:    private static native void initIDs();
+macosx/classes/sun/java2d/OSXOffScreenSurfaceData.java:68:    public static native SurfaceData getSurfaceData(BufferedImage bufImg);
+macosx/classes/sun/java2d/OSXOffScreenSurfaceData.java:70:    protected static native void setSurfaceData(BufferedImage bufImg, SurfaceData sData);
+macosx/classes/sun/lwawt/macosx/CAccessibility.java:728:    private static native String roleKey(AccessibleRole aRole);
+macosx/classes/sun/lwawt/macosx/CAccessible.java:65:    private static native void unregisterFromCocoaAXSystem(long ptr);
+macosx/classes/sun/lwawt/macosx/CAccessible.java:66:    private static native void valueChanged(long ptr);
+macosx/classes/sun/lwawt/macosx/CAccessible.java:67:    private static native void selectedTextChanged(long ptr);
+macosx/classes/sun/lwawt/macosx/CAccessible.java:68:    private static native void selectionChanged(long ptr);
+macosx/classes/sun/lwawt/macosx/CAccessible.java:69:    private static native void menuOpened(long ptr);
+macosx/classes/sun/lwawt/macosx/CAccessible.java:70:    private static native void menuClosed(long ptr);
+macosx/classes/sun/lwawt/macosx/CAccessible.java:71:    private static native void menuItemSelected(long ptr);
+macosx/classes/sun/lwawt/macosx/CCursorManager.java:36:    private static native Point2D nativeGetCursorPosition();
+macosx/classes/sun/lwawt/macosx/CCursorManager.java:37:    private static native void nativeSetBuiltInCursor(final int type, final String name);
+macosx/classes/sun/lwawt/macosx/CCursorManager.java:38:    private static native void nativeSetCustomCursor(final long imgPtr, final double x, final double y);
+macosx/classes/sun/lwawt/macosx/CCursorManager.java:39:    public static native void nativeSetAllowsCursorSetInBackground(final boolean allows);
+macosx/classes/sun/lwawt/macosx/CDataTransferer.java:246:    private static native String[] nativeDragQueryFile(final byte[] bytes);
+macosx/classes/sun/lwawt/macosx/CDesktopPeer.java:181:    private static native int _lsOpenURI(String uri);
+macosx/classes/sun/lwawt/macosx/CDesktopPeer.java:183:    private static native int _lsOpenFile(String path, boolean print);
+macosx/classes/sun/lwawt/macosx/CFRetainedResource.java:37:    private static native void nativeCFRelease(final long ptr, final boolean disposeOnAppKitThread);
+macosx/classes/sun/lwawt/macosx/CImage.java:42:    private static native long nativeCreateNSImageFromArray(int[] buffer, int w, int h);
+macosx/classes/sun/lwawt/macosx/CImage.java:43:    private static native long nativeCreateNSImageFromBytes(byte[] buffer);
+macosx/classes/sun/lwawt/macosx/CImage.java:44:    private static native long nativeCreateNSImageFromArrays(int[][] buffers, int w[], int h[]);
+macosx/classes/sun/lwawt/macosx/CImage.java:45:    private static native long nativeCreateNSImageFromFileContents(String file);
+macosx/classes/sun/lwawt/macosx/CImage.java:46:    private static native long nativeCreateNSImageOfFileFromLaunchServices(String file);
+macosx/classes/sun/lwawt/macosx/CImage.java:47:    private static native long nativeCreateNSImageFromImageName(String name);
+macosx/classes/sun/lwawt/macosx/CImage.java:48:    private static native long nativeCreateNSImageFromIconSelector(int selector);
+macosx/classes/sun/lwawt/macosx/CImage.java:49:    private static native byte[] nativeGetPlatformImageBytes(int[] buffer, int w, int h);
+macosx/classes/sun/lwawt/macosx/CImage.java:50:    private static native void nativeCopyNSImageIntoArray(long image, int[] buffer, int sw, int sh, int dw, int dh);
+macosx/classes/sun/lwawt/macosx/CImage.java:51:    private static native Dimension2D nativeGetNSImageSize(long image);
+macosx/classes/sun/lwawt/macosx/CImage.java:52:    private static native void nativeSetNSImageSize(long image, double w, double h);
+macosx/classes/sun/lwawt/macosx/CImage.java:53:    private static native void nativeResizeNSImageRepresentations(long image, double w, double h);
+macosx/classes/sun/lwawt/macosx/CImage.java:54:    private static native Dimension2D[] nativeGetNSImageRepresentationSizes(long image, double w, double h);
+macosx/classes/sun/lwawt/macosx/CInputMethod.java:806:    static native Locale getNativeLocale();
+macosx/classes/sun/lwawt/macosx/CInputMethod.java:809:    static native boolean setNativeLocale(String localeName, boolean onActivate);
+macosx/classes/sun/lwawt/macosx/CInputMethod.java:812:    static native String nativeGetCurrentInputMethodInfo();
+macosx/classes/sun/lwawt/macosx/CInputMethod.java:815:    static native void nativeInit();
+macosx/classes/sun/lwawt/macosx/CInputMethodDescriptor.java:125:    private static native void nativeInit();
+macosx/classes/sun/lwawt/macosx/CInputMethodDescriptor.java:126:    private static native List<Object> nativeGetAvailableLocales();
+macosx/classes/sun/lwawt/macosx/CPlatformView.java:44:    private static native void nativeSetAutoResizable(long awtView, boolean toResize);
+macosx/classes/sun/lwawt/macosx/CPlatformView.java:45:    private static native int nativeGetNSViewDisplayID(long awtView);
+macosx/classes/sun/lwawt/macosx/CPlatformView.java:46:    private static native Rectangle2D nativeGetLocationOnScreen(long awtView);
+macosx/classes/sun/lwawt/macosx/CPlatformView.java:47:    private static native boolean nativeIsViewUnderMouse(long ptr);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:59:    private static native void nativeSetNSWindowStyleBits(long nsWindowPtr, int mask, int data);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:60:    private static native void nativeSetNSWindowMenuBar(long nsWindowPtr, long menuBarPtr);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:61:    private static native Insets nativeGetNSWindowInsets(long nsWindowPtr);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:62:    private static native void nativeSetNSWindowBounds(long nsWindowPtr, double x, double y, double w, double h);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:63:    private static native void nativeSetNSWindowLocationByPlatform(long nsWindowPtr);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:64:    private static native void nativeSetNSWindowStandardFrame(long nsWindowPtr,
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:66:    private static native void nativeSetNSWindowMinMax(long nsWindowPtr, double minW, double minH, double maxW, double maxH);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:67:    private static native void nativePushNSWindowToBack(long nsWindowPtr);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:68:    private static native void nativePushNSWindowToFront(long nsWindowPtr);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:69:    private static native void nativeSetNSWindowTitle(long nsWindowPtr, String title);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:70:    private static native void nativeRevalidateNSWindowShadow(long nsWindowPtr);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:71:    private static native void nativeSetNSWindowMinimizedIcon(long nsWindowPtr, long nsImage);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:72:    private static native void nativeSetNSWindowRepresentedFilename(long nsWindowPtr, String representedFilename);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:73:    private static native void nativeSetEnabled(long nsWindowPtr, boolean isEnabled);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:74:    private static native void nativeSynthesizeMouseEnteredExitedEvents();
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:75:    private static native void nativeSynthesizeMouseEnteredExitedEvents(long nsWindowPtr, int eventType);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:76:    private static native void nativeDispose(long nsWindowPtr);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:77:    private static native void nativeEnterFullScreenMode(long nsWindowPtr);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:78:    private static native void nativeExitFullScreenMode(long nsWindowPtr);
+macosx/classes/sun/lwawt/macosx/CPlatformWindow.java:79:    static native CPlatformWindow nativeGetTopmostPlatformWindowUnderMouse();
+macosx/classes/sun/lwawt/macosx/CPrinterJob.java:778:    private static native void _safePrintLoop(long target, long arg);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:46:        static native void setLevel(long window, int level);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:48:        static native void makeKeyAndOrderFront(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:49:        static native void makeKeyWindow(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:50:        static native void makeMainWindow(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:51:        static native boolean canBecomeMainWindow(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:52:        static native boolean isKeyWindow(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:54:        static native void orderFront(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:55:        static native void orderFrontRegardless(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:56:        static native void orderWindow(long window, int ordered, long relativeTo);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:63:        static native void orderOut(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:75:        static native void close(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:77:        static native void addChildWindow(long parent, long child, int ordered);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:78:        static native void removeChildWindow(long parent, long child);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:80:        static native void setAlphaValue(long window, float alpha);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:81:        static native void setOpaque(long window, boolean opaque);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:89:        static native void setBackgroundColor(long window, int color);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:91:        static native void miniaturize(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:92:        static native void deminiaturize(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:93:        static native boolean isZoomed(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:94:        static native void zoom(long window);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:96:        static native void makeFirstResponder(long window, long responder);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:100:        static native void addSubview(long view, long subview);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:101:        static native void removeFromSuperview(long view);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:103:        static native void setFrame(long view, int x, int y, int w, int h);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:104:        static native long window(long view);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:106:        static native void setHidden(long view, boolean hidden);
+macosx/classes/sun/lwawt/macosx/CWrapper.java:108:        static native void setToolTip(long view, String msg);
+macosx/classes/sun/lwawt/macosx/LWCToolkit.java:75:    private static native void initIDs();
+macosx/classes/sun/lwawt/macosx/LWCToolkit.java:76:    private static native void initAppkit(ThreadGroup appKitThreadGroup, boolean headless);
+macosx/classes/sun/lwawt/macosx/LWCToolkit.java:677:    static native void performOnMainThreadAfterDelay(Runnable r, long delay);
+macosx/classes/sun/lwawt/macosx/LWCToolkit.java:807:    public static native boolean isEmbedded();
+macosx/classes/sun/lwawt/macosx/LWCToolkit.java:818:    static native long createAWTRunLoopMediator();
+macosx/classes/sun/lwawt/macosx/LWCToolkit.java:833:    private static native void doAWTRunLoopImpl(long mediator, boolean processEvents, boolean inAWT);
+macosx/classes/sun/lwawt/macosx/LWCToolkit.java:834:    static native void stopAWTRunLoop(long mediator);
+macosx/classes/sun/lwawt/macosx/LWCToolkit.java:841:    static native void flushNativeSelectors();
+macosx/classes/sun/lwawt/macosx/NSEvent.java:254:    static native int nsToJavaModifiers(int modifierFlags);
+macosx/classes/sun/lwawt/macosx/NSEvent.java:259:    static native boolean nsToJavaKeyInfo(int[] in, int[] out);
+macosx/classes/sun/lwawt/macosx/NSEvent.java:264:    static native void nsKeyModifiersToJavaKeyInfo(int[] in, int[] out);
+macosx/classes/sun/lwawt/macosx/NSEvent.java:270:    static native char nsToJavaChar(char nsChar, int modifierFlags, boolean spaceKeyTyped);
+share/classes/com/sun/imageio/plugins/jpeg/JPEGImageReader.java:226:    private static native void initReaderIDs(Class<?> iisClass,
+share/classes/com/sun/imageio/plugins/jpeg/JPEGImageReader.java:1724:    private static native void disposeReader(long structPointer);
+share/classes/com/sun/imageio/plugins/jpeg/JPEGImageWriter.java:1692:    private static native void initWriterIDs(Class<?> qTableClass,
+share/classes/com/sun/imageio/plugins/jpeg/JPEGImageWriter.java:1840:    private static native void disposeWriter(long structPointer);
+share/classes/com/sun/java/swing/plaf/gtk/GTKStyle.java:51:    private static native int nativeGetXThickness(int widgetType);
+share/classes/com/sun/java/swing/plaf/gtk/GTKStyle.java:52:    private static native int nativeGetYThickness(int widgetType);
+share/classes/com/sun/java/swing/plaf/gtk/GTKStyle.java:53:    private static native int nativeGetColorForState(int widgetType,
+share/classes/com/sun/java/swing/plaf/gtk/GTKStyle.java:55:    private static native Object nativeGetClassValue(int widgetType,
+share/classes/com/sun/java/swing/plaf/gtk/GTKStyle.java:57:    private static native String nativeGetPangoFontName(int widgetType);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1460:    private static native void nGetFormats(int mixerIndex, int deviceID,
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1463:    private static native long nOpen(int mixerIndex, int deviceID, boolean isSource,
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1472:    private static native void nStart(long id, boolean isSource);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1473:    private static native void nStop(long id, boolean isSource);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1474:    private static native void nClose(long id, boolean isSource);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1475:    private static native int nWrite(long id, byte[] b, int off, int len, int conversionSize,
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1477:    private static native int nRead(long id, byte[] b, int off, int len, int conversionSize);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1478:    private static native int nGetBufferSize(long id, boolean isSource);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1479:    private static native boolean nIsStillDraining(long id, boolean isSource);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1480:    private static native void nFlush(long id, boolean isSource);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1481:    private static native int nAvailable(long id, boolean isSource);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1483:    private static native long nGetBytePosition(long id, boolean isSource, long javaPos);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1484:    private static native void nSetBytePosition(long id, boolean isSource, long pos);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1487:    private static native boolean nRequiresServicing(long id, boolean isSource);
+share/classes/com/sun/media/sound/DirectAudioDevice.java:1489:    private static native void nService(long id, boolean isSource);
+share/classes/com/sun/media/sound/DirectAudioDeviceProvider.java:161:    private static native int nGetNumDevices();
+share/classes/com/sun/media/sound/DirectAudioDeviceProvider.java:163:    private static native DirectAudioDeviceInfo nNewDirectAudioDeviceInfo(int deviceIndex);
+share/classes/com/sun/media/sound/MidiInDeviceProvider.java:117:    private static native int nGetNumDevices();
+share/classes/com/sun/media/sound/MidiInDeviceProvider.java:118:    private static native String nGetName(int index);
+share/classes/com/sun/media/sound/MidiInDeviceProvider.java:119:    private static native String nGetVendor(int index);
+share/classes/com/sun/media/sound/MidiInDeviceProvider.java:120:    private static native String nGetDescription(int index);
+share/classes/com/sun/media/sound/MidiInDeviceProvider.java:121:    private static native String nGetVersion(int index);
+share/classes/com/sun/media/sound/MidiOutDeviceProvider.java:113:    private static native int nGetNumDevices();
+share/classes/com/sun/media/sound/MidiOutDeviceProvider.java:114:    private static native String nGetName(int index);
+share/classes/com/sun/media/sound/MidiOutDeviceProvider.java:115:    private static native String nGetVendor(int index);
+share/classes/com/sun/media/sound/MidiOutDeviceProvider.java:116:    private static native String nGetDescription(int index);
+share/classes/com/sun/media/sound/MidiOutDeviceProvider.java:117:    private static native String nGetVersion(int index);
+share/classes/com/sun/media/sound/Platform.java:155:    private static native boolean nIsBigEndian();
+share/classes/com/sun/media/sound/Platform.java:156:    private static native String nGetExtraLibraries();
+share/classes/com/sun/media/sound/Platform.java:157:    private static native int nGetLibraryForFeature(int feature);
+share/classes/com/sun/media/sound/PortMixer.java:473:    private static native long nOpen(int mixerIndex) throws LineUnavailableException;
+share/classes/com/sun/media/sound/PortMixer.java:474:    private static native void nClose(long id);
+share/classes/com/sun/media/sound/PortMixer.java:477:    private static native int nGetPortCount(long id);
+share/classes/com/sun/media/sound/PortMixer.java:480:    private static native int nGetPortType(long id, int portIndex);
+share/classes/com/sun/media/sound/PortMixer.java:483:    private static native String nGetPortName(long id, int portIndex);
+share/classes/com/sun/media/sound/PortMixer.java:487:    private static native void nGetControls(long id, int portIndex, Vector vector);
+share/classes/com/sun/media/sound/PortMixer.java:490:    private static native void nControlSetIntValue(long controlID, int value);
+share/classes/com/sun/media/sound/PortMixer.java:491:    private static native int nControlGetIntValue(long controlID);
+share/classes/com/sun/media/sound/PortMixer.java:492:    private static native void nControlSetFloatValue(long controlID, float value);
+share/classes/com/sun/media/sound/PortMixer.java:493:    private static native float nControlGetFloatValue(long controlID);
+share/classes/com/sun/media/sound/PortMixerProvider.java:135:    private static native int nGetNumDevices();
+share/classes/com/sun/media/sound/PortMixerProvider.java:136:    private static native PortMixerInfo nNewPortMixerInfo(int mixerIndex);
+share/classes/java/awt/AWTEvent.java:291:    private static native void initIDs();
+share/classes/java/awt/Button.java:130:    private static native void initIDs();
+share/classes/java/awt/Checkbox.java:676:    private static native void initIDs();
+share/classes/java/awt/CheckboxMenuItem.java:495:    private static native void initIDs();
+share/classes/java/awt/Choice.java:728:    private static native void initIDs();
+share/classes/java/awt/Color.java:264:    private static native void initIDs();
+share/classes/java/awt/Component.java:9229:    private static native void initIDs();
+share/classes/java/awt/Container.java:284:    private static native void initIDs();
+share/classes/java/awt/Cursor.java:210:    private static native void initIDs();
+share/classes/java/awt/Cursor.java:452:    private static native void finalizeImpl(long pData);
+share/classes/java/awt/Dialog.java:1354:    private static native void initIDs();
+share/classes/java/awt/Dimension.java:84:    private static native void initIDs();
+share/classes/java/awt/event/InputEvent.java:343:    private static native void initIDs();
+share/classes/java/awt/event/KeyEvent.java:1106:    private static native void initIDs();
+share/classes/java/awt/event/MouseEvent.java:408:    private static native void initIDs();
+share/classes/java/awt/Event.java:610:    private static native void initIDs();
+share/classes/java/awt/FileDialog.java:171:    private static native void initIDs();
+share/classes/java/awt/Font.java:2870:    private static native void initIDs();
+share/classes/java/awt/FontMetrics.java:641:    private static native void initIDs();
+share/classes/java/awt/Frame.java:1263:    private static native void initIDs();
+share/classes/java/awt/image/BufferedImage.java:284:    private static native void initIDs();
+share/classes/java/awt/image/ColorModel.java:216:    private static native void initIDs();
+share/classes/java/awt/image/IndexColorModel.java:140:    private static native void initIDs();
+share/classes/java/awt/image/Kernel.java:46:    private static native void initIDs();
+share/classes/java/awt/image/Raster.java:170:    private static native void initIDs();
+share/classes/java/awt/image/SampleModel.java:102:    private static native void initIDs();
+share/classes/java/awt/image/SinglePixelPackedSampleModel.java:85:    private static native void initIDs();
+share/classes/java/awt/Insets.java:186:    private static native void initIDs();
+share/classes/java/awt/KeyboardFocusManager.java:163:    private static native void initIDs();
+share/classes/java/awt/Label.java:287:    private static native void initIDs();
+share/classes/java/awt/Menu.java:578:    private static native void initIDs();
+share/classes/java/awt/MenuBar.java:467:    private static native void initIDs();
+share/classes/java/awt/MenuComponent.java:463:    private static native void initIDs();
+share/classes/java/awt/MenuItem.java:783:    private static native void initIDs();
+share/classes/java/awt/Rectangle.java:169:    private static native void initIDs();
+share/classes/java/awt/Scrollbar.java:284:    private static native void initIDs();
+share/classes/java/awt/ScrollPane.java:97:    private static native void initIDs();
+share/classes/java/awt/ScrollPaneAdjustable.java:154:    private static native void initIDs();
+share/classes/java/awt/SplashScreen.java:424:    private static native void _update(long splashPtr, int[] data, int x, int y, int width, int height, int scanlineStride);
+share/classes/java/awt/SplashScreen.java:425:    private static native boolean _isVisible(long splashPtr);
+share/classes/java/awt/SplashScreen.java:426:    private static native Rectangle _getBounds(long splashPtr);
+share/classes/java/awt/SplashScreen.java:427:    private static native long _getInstance();
+share/classes/java/awt/SplashScreen.java:428:    private static native void _close(long splashPtr);
+share/classes/java/awt/SplashScreen.java:429:    private static native String _getImageFileName(long splashPtr);
+share/classes/java/awt/SplashScreen.java:430:    private static native String _getImageJarName(long SplashPtr);
+share/classes/java/awt/SplashScreen.java:431:    private static native boolean _setImageData(long SplashPtr, byte[] data);
+share/classes/java/awt/SplashScreen.java:432:    private static native float _getScaleFactor(long SplashPtr);
+share/classes/java/awt/TextArea.java:136:    private static native void initIDs();
+share/classes/java/awt/TextField.java:137:    private static native void initIDs();
+share/classes/java/awt/Toolkit.java:1323:    private static native void initIDs();
+share/classes/java/awt/TrayIcon.java:785:    private static native void initIDs();
+share/classes/java/awt/Window.java:412:    private static native void initIDs();
+share/classes/sun/awt/FontDescriptor.java:103:    private static native void initIDs();
+share/classes/sun/awt/image/BufImgSurfaceData.java:56:    private static native void initIDs(Class<?> ICM, Class<?> ICMColorData);
+share/classes/sun/awt/image/BufImgSurfaceData.java:449:    private static native void freeNativeICMData(long pData);
+share/classes/sun/awt/image/ByteComponentRaster.java:78:    private static native void initIDs();
+share/classes/sun/awt/image/BytePackedRaster.java:77:    private static native void initIDs();
+share/classes/sun/awt/image/GifImageDecoder.java:346:    private static native void initIDs();
+share/classes/sun/awt/image/ImageRepresentation.java:78:    private static native void initIDs();
+share/classes/sun/awt/image/ImagingLib.java:74:    private static native boolean init();
+share/classes/sun/awt/image/ImagingLib.java:76:    public static native int transformBI(BufferedImage src, BufferedImage dst,
+share/classes/sun/awt/image/ImagingLib.java:78:    public static native int transformRaster(Raster src, Raster dst,
+share/classes/sun/awt/image/ImagingLib.java:81:    public static native int convolveBI(BufferedImage src, BufferedImage dst,
+share/classes/sun/awt/image/ImagingLib.java:83:    public static native int convolveRaster(Raster src, Raster dst,
+share/classes/sun/awt/image/ImagingLib.java:85:    public static native int lookupByteBI(BufferedImage src, BufferedImage dst,
+share/classes/sun/awt/image/ImagingLib.java:87:    public static native int lookupByteRaster(Raster src, Raster dst,
+share/classes/sun/awt/image/IntegerComponentRaster.java:93:    private static native void initIDs();
+share/classes/sun/awt/image/JPEGImageDecoder.java:51:    private static native void initIDs(Class<?> InputStreamClass);
+share/classes/sun/awt/image/ShortComponentRaster.java:78:    private static native void initIDs();
+share/classes/sun/awt/PlatformFont.java:429:    private static native void initIDs();
+share/classes/sun/awt/SunToolkit.java:1624:    public static native void closeSplashScreen();
+share/classes/sun/font/FileFontStrike.java:114:    private static native boolean initNative();
+share/classes/sun/font/FreetypeFontScaler.java:53:    private static native void initIDs(Class<?> FFS);
+share/classes/sun/font/NullFontScaler.java:104:    static native long getNullScalerContext();
+share/classes/sun/font/StrikeCache.java:134:    static native void getGlyphCacheDescription(long[] infoArray);
+share/classes/sun/font/StrikeCache.java:311:    static native void freeIntPointer(int ptr);
+share/classes/sun/font/StrikeCache.java:312:    static native void freeLongPointer(long ptr);
+share/classes/sun/font/StrikeCache.java:313:    private static native void freeIntMemory(int[] glyphPtrs, long pContext);
+share/classes/sun/font/StrikeCache.java:314:    private static native void freeLongMemory(long[] glyphPtrs, long pContext);
+share/classes/sun/font/SunFontManager.java:379:    private static native void initIDs();
+share/classes/sun/font/SunLayoutEngine.java:105:    private static native void initGVIDs();
+share/classes/sun/font/SunLayoutEngine.java:203:    private static native void nativeLayout(Font2D font, FontStrike strike, float[] mat, int gmask, int baseIndex, char[] chars, int offset, int limit, int min, int max, int script, int lang, int typo_flags, Point2D.Float pt, GVData data, long upem, long layoutTables);
+share/classes/sun/font/SunLayoutEngine.java:211:    private static native boolean shape(Font2D font, FontStrike strike, float ptSize, float[] mat, long pscaler, long pNativeFont, boolean aat, char[] chars, GVData data, int script, int offset, int limit, int baseIndex, Point2D.Float pt, int typo_flags, int slot);
+share/classes/sun/java2d/cmm/lcms/LCMS.java:93:    static native byte[] getTagNative(long profileID, int signature);
+share/classes/sun/java2d/cmm/lcms/LCMS.java:160:    private static native long createNativeTransform(
+share/classes/sun/java2d/cmm/lcms/LCMS.java:187:    public static native void colorConvert(LCMSTransform trans,
+share/classes/sun/java2d/cmm/lcms/LCMS.java:191:    public static native void initLCMS(Class<?> Trans, Class<?> IL, Class<?> Pf);
+share/classes/sun/java2d/DefaultDisposerRecord.java:54:    public static native void invokeNativeDispose(long disposerMethodPointer,
+share/classes/sun/java2d/Disposer.java:234:    private static native void initIDs();
+share/classes/sun/java2d/loops/GraphicsPrimitiveMgr.java:48:    private static native void initIDs(Class<?> GP, Class<?> ST, Class<?> CT,
+share/classes/sun/java2d/loops/GraphicsPrimitiveMgr.java:53:    private static native void registerNativeLoops();
+share/classes/sun/java2d/pipe/Region.java:87:    private static native void initIDs();
+share/classes/sun/java2d/pipe/RegionSpanIterator.java:58:    public static native void initIDs();
+share/classes/sun/java2d/pipe/ShapeSpanIterator.java:74:    public static native void initIDs();
+share/classes/sun/java2d/pipe/SpanClipRenderer.java:48:    static native void initIDs(Class<?> rc, Class<?> ric);
+share/classes/sun/java2d/SurfaceData.java:112:    private static native void initIDs();
+share/classes/sun/java2d/SurfaceData.java:1025:    protected static native boolean isOpaqueGray(IndexColorModel icm);
+unix/classes/sun/awt/UNIXToolkit.java:282:    private static native boolean check_gtk(int version);
+unix/classes/sun/awt/UNIXToolkit.java:283:    private static native boolean load_gtk(int version, boolean verbose);
+unix/classes/sun/awt/UNIXToolkit.java:284:    private static native boolean unload_gtk();
+unix/classes/sun/awt/UNIXToolkit.java:290:    private static native int get_gtk_version();
+unix/classes/sun/awt/X11/GtkFileDialogPeer.java:52:    private static native void initIDs();
+unix/classes/sun/awt/X11/XDesktopPeer.java:129:    private static native boolean init(int gtkVersion, boolean verbose);
+unix/classes/sun/awt/X11/XFontPeer.java:47:    private static native void initIDs();
+unix/classes/sun/awt/X11/XlibWrapper.java:61:    static native void XFree(long ptr);
+unix/classes/sun/awt/X11/XlibWrapper.java:62:    static native void memcpy(long dest_ptr, long src_ptr, long length);
+unix/classes/sun/awt/X11/XlibWrapper.java:63:    static native long getAddress(Object o);
+unix/classes/sun/awt/X11/XlibWrapper.java:64:    static native void copyIntArray(long dest_ptr, Object array, int size_bytes);
+unix/classes/sun/awt/X11/XlibWrapper.java:65:    static native void copyLongArray(long dest_ptr, Object array, int size_bytes);
+unix/classes/sun/awt/X11/XlibWrapper.java:71:    static native byte[] getStringBytes(long str_ptr);
+unix/classes/sun/awt/X11/XlibWrapper.java:83:    static native long ScreenOfDisplay(long display, long screen_number);
+unix/classes/sun/awt/X11/XlibWrapper.java:85:    static native int DoesBackingStore(long screen);
+unix/classes/sun/awt/X11/XlibWrapper.java:87:    static native  long DisplayWidth(long display, long screen);
+unix/classes/sun/awt/X11/XlibWrapper.java:88:    static native  long DisplayWidthMM(long display, long screen);
+unix/classes/sun/awt/X11/XlibWrapper.java:90:    static native long DisplayHeight(long display, long screen);
+unix/classes/sun/awt/X11/XlibWrapper.java:91:    static native long DisplayHeightMM(long display, long screen);
+unix/classes/sun/awt/X11/XlibWrapper.java:94:    static native int ScreenCount(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:113:    static native long XCreateWindow(long display, long parent, int x,int  y, int width, int height, int border_width, int depth, long wclass, long visual, long valuemask, long attributes);
+unix/classes/sun/awt/X11/XlibWrapper.java:115:    static native void XDestroyWindow(long display, long window);
+unix/classes/sun/awt/X11/XlibWrapper.java:117:    static native int XGrabPointer(long display, long grab_window,
+unix/classes/sun/awt/X11/XlibWrapper.java:121:    static native void XUngrabPointer(long display, long time);
+unix/classes/sun/awt/X11/XlibWrapper.java:123:    static native int XGrabKeyboard(long display, long grab_window,
+unix/classes/sun/awt/X11/XlibWrapper.java:127:    static native void XUngrabKeyboard(long display, long time);
+unix/classes/sun/awt/X11/XlibWrapper.java:129:    static native void XGrabServer(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:130:    static native void XUngrabServer(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:158:    static native void XLowerWindow(long display, long window);
+unix/classes/sun/awt/X11/XlibWrapper.java:159:    static native void XRestackWindows(long display, long windows, int length);
+unix/classes/sun/awt/X11/XlibWrapper.java:160:    static native void XConfigureWindow(long display, long window,
+unix/classes/sun/awt/X11/XlibWrapper.java:162:    static native void XSetInputFocus(long display, long window);
+unix/classes/sun/awt/X11/XlibWrapper.java:163:    static native void XSetInputFocus2(long display, long window, long time);
+unix/classes/sun/awt/X11/XlibWrapper.java:164:    static native long XGetInputFocus(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:202:    static native void XMaskEvent(long display, long event_mask, long event_return);
+unix/classes/sun/awt/X11/XlibWrapper.java:204:    static native void XWindowEvent(long display, long window, long event_mask, long event_return);
+unix/classes/sun/awt/X11/XlibWrapper.java:211:    static native boolean XFilterEvent(long ptr, long window);
+unix/classes/sun/awt/X11/XlibWrapper.java:216:static native boolean XSupportsLocale();
+unix/classes/sun/awt/X11/XlibWrapper.java:222:static native String XSetLocaleModifiers(String modifier_list);
+unix/classes/sun/awt/X11/XlibWrapper.java:245:    static native void XFlush(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:253:    static native void XSync(long display,int discard);
+unix/classes/sun/awt/X11/XlibWrapper.java:262:    static native void XMoveResizeWindow(long display, long window, int x, int y, int width, int height);
+unix/classes/sun/awt/X11/XlibWrapper.java:263:    static native void XResizeWindow(long display, long window, int width, int height);
+unix/classes/sun/awt/X11/XlibWrapper.java:264:    static native void XMoveWindow(long display, long window, int x, int y);
+unix/classes/sun/awt/X11/XlibWrapper.java:279: static native boolean  XQueryPointer (long display, long window, long root_return, long child_return, long root_x_return, long root_y_return, long win_x_return, long win_y_return, long mask_return);
+unix/classes/sun/awt/X11/XlibWrapper.java:286: static native void XFreeCursor(long display, long cursor);
+unix/classes/sun/awt/X11/XlibWrapper.java:295:    static native void XSetWindowBackground(long display, long window, long background_pixel);
+unix/classes/sun/awt/X11/XlibWrapper.java:297:    static native int XEventsQueued(long display, int mode);
+unix/classes/sun/awt/X11/XlibWrapper.java:306:    static native int XInternAtoms(long display, String[] names, boolean only_if_exists, long atoms);
+unix/classes/sun/awt/X11/XlibWrapper.java:308:    static native void SetProperty(long display, long window, long atom, String str);
+unix/classes/sun/awt/X11/XlibWrapper.java:309:    static native String GetProperty(long display ,long window, long atom);
+unix/classes/sun/awt/X11/XlibWrapper.java:310:    static native long InternAtom(long display, String string, int only_if_exists);
+unix/classes/sun/awt/X11/XlibWrapper.java:311:    static native int XGetWindowProperty(long display, long window, long atom,
+unix/classes/sun/awt/X11/XlibWrapper.java:316:    static native void XChangePropertyImpl(long display, long window, long atom,
+unix/classes/sun/awt/X11/XlibWrapper.java:341:    static native void XChangePropertyS(long display, long window, long atom,
+unix/classes/sun/awt/X11/XlibWrapper.java:343:    static native void XDeleteProperty(long display, long window, long atom);
+unix/classes/sun/awt/X11/XlibWrapper.java:345:    static native void XSetTransientFor(long display, long window, long transient_for_window);
+unix/classes/sun/awt/X11/XlibWrapper.java:346:    static native void XSetWMHints(long display, long window, long wmhints);
+unix/classes/sun/awt/X11/XlibWrapper.java:347:    static native void XGetWMHints(long display, long window, long wmhints);
+unix/classes/sun/awt/X11/XlibWrapper.java:348:    static native long XAllocWMHints();
+unix/classes/sun/awt/X11/XlibWrapper.java:349:    static native int XGetPointerMapping(long display, long map, int buttonNumber);
+unix/classes/sun/awt/X11/XlibWrapper.java:350:    static native String XGetDefault(long display, String program, String option);
+unix/classes/sun/awt/X11/XlibWrapper.java:351:    static native long getScreenOfWindow(long display, long window);
+unix/classes/sun/awt/X11/XlibWrapper.java:352:    static native long XScreenNumberOfScreen(long screen);
+unix/classes/sun/awt/X11/XlibWrapper.java:353:    static native int XIconifyWindow(long display, long window, long screenNumber);
+unix/classes/sun/awt/X11/XlibWrapper.java:354:    static native String ServerVendor(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:355:    static native int VendorRelease(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:356:    static native boolean IsXsunKPBehavior(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:357:    static native boolean IsSunKeyboard(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:358:    static native boolean IsKanaKeyboard(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:360:    static native void XBell(long display, int percent);
+unix/classes/sun/awt/X11/XlibWrapper.java:371:    static native int XCreateFontCursor(long display, int shape);
+unix/classes/sun/awt/X11/XlibWrapper.java:382:    static native long XCreateBitmapFromData(long display, long drawable, long data, int width, int height);
+unix/classes/sun/awt/X11/XlibWrapper.java:390:   static native void XFreePixmap(long display, long pixmap);
+unix/classes/sun/awt/X11/XlibWrapper.java:402:   static native long XCreatePixmapCursor(long display, long source, long mask, long fore, long back, int x, int y);
+unix/classes/sun/awt/X11/XlibWrapper.java:415:    static native boolean XQueryBestCursor(long display, long drawable, int width, int height, long width_return, long height_return);
+unix/classes/sun/awt/X11/XlibWrapper.java:425:    static native boolean XAllocColor( long display, long colormap, long screen_in_out);
+unix/classes/sun/awt/X11/XlibWrapper.java:428:    static native long SetToolkitErrorHandler();
+unix/classes/sun/awt/X11/XlibWrapper.java:429:    static native void XSetErrorHandler(long handler);
+unix/classes/sun/awt/X11/XlibWrapper.java:430:    static native int CallErrorHandler(long handler, long display, long event_ptr);
+unix/classes/sun/awt/X11/XlibWrapper.java:440:    static native void XChangeWindowAttributes(long display, long window, long valuemask, long attributes);
+unix/classes/sun/awt/X11/XlibWrapper.java:441:    static native int XGetWindowAttributes(long display, long window, long attr_ptr);
+unix/classes/sun/awt/X11/XlibWrapper.java:442:    static native int XGetGeometry(long display, long drawable, long root_return, long x_return, long y_return,
+unix/classes/sun/awt/X11/XlibWrapper.java:445:    static native int XGetWMNormalHints(long display, long window, long hints, long supplied_return);
+unix/classes/sun/awt/X11/XlibWrapper.java:446:    static native void XSetWMNormalHints(long display, long window, long hints);
+unix/classes/sun/awt/X11/XlibWrapper.java:447:    static native void XSetMinMaxHints(long display, long window, int x, int y, int width, int height, long flags);
+unix/classes/sun/awt/X11/XlibWrapper.java:448:    static native long XAllocSizeHints();
+unix/classes/sun/awt/X11/XlibWrapper.java:450:    static native int XSendEvent(long display, long window, boolean propagate, long event_mask, long event);
+unix/classes/sun/awt/X11/XlibWrapper.java:451:    static native void XPutBackEvent(long display, long event);
+unix/classes/sun/awt/X11/XlibWrapper.java:452:    static native int XQueryTree(long display, long window, long root_return, long parent_return, long children_return, long nchildren_return);
+unix/classes/sun/awt/X11/XlibWrapper.java:453:    static native long XGetVisualInfo(long display, long vinfo_mask, long vinfo_template, long nitems_return);
+unix/classes/sun/awt/X11/XlibWrapper.java:454:    static native void XReparentWindow(long display, long window, long parent, int x, int y);
+unix/classes/sun/awt/X11/XlibWrapper.java:456:    static native void XConvertSelection(long display, long selection,
+unix/classes/sun/awt/X11/XlibWrapper.java:460:    static native void XSetSelectionOwner(long display, long selection,
+unix/classes/sun/awt/X11/XlibWrapper.java:463:    static native long XGetSelectionOwner(long display, long selection);
+unix/classes/sun/awt/X11/XlibWrapper.java:465:    static native String XGetAtomName(long display, long atom);
+unix/classes/sun/awt/X11/XlibWrapper.java:467:    static native long XMaxRequestSize(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:470:    static native long XCreatePixmap(long display, long drawable, int width, int height, int depth);
+unix/classes/sun/awt/X11/XlibWrapper.java:471:    static native long XCreateImage(long display, long visual_ptr, int depth, int format,
+unix/classes/sun/awt/X11/XlibWrapper.java:474:    static native void XDestroyImage(long image);
+unix/classes/sun/awt/X11/XlibWrapper.java:475:    static native void XPutImage(long display, long drawable, long gc, long image,
+unix/classes/sun/awt/X11/XlibWrapper.java:478:    static native long XCreateGC(long display, long drawable, long valuemask, long values);
+unix/classes/sun/awt/X11/XlibWrapper.java:479:    static native void XFreeGC(long display, long gc);
+unix/classes/sun/awt/X11/XlibWrapper.java:480:    static native void XSetWindowBackgroundPixmap(long display, long window, long pixmap);
+unix/classes/sun/awt/X11/XlibWrapper.java:481:    static native void XClearWindow(long display, long window);
+unix/classes/sun/awt/X11/XlibWrapper.java:482:    static native int XGetIconSizes(long display, long window, long ret_sizes, long ret_count);
+unix/classes/sun/awt/X11/XlibWrapper.java:483:    static native int XdbeQueryExtension(long display, long major_version_return,
+unix/classes/sun/awt/X11/XlibWrapper.java:485:    static native boolean XQueryExtension(long display, String name, long mop_return,
+unix/classes/sun/awt/X11/XlibWrapper.java:487:    static native boolean IsKeypadKey(long keysym);
+unix/classes/sun/awt/X11/XlibWrapper.java:488:    static native long XdbeAllocateBackBufferName(long display, long window, int swap_action);
+unix/classes/sun/awt/X11/XlibWrapper.java:489:    static native int XdbeDeallocateBackBufferName(long display, long buffer);
+unix/classes/sun/awt/X11/XlibWrapper.java:490:    static native int XdbeBeginIdiom(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:491:    static native int XdbeEndIdiom(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:492:    static native int XdbeSwapBuffers(long display, long swap_info, int num_windows);
+unix/classes/sun/awt/X11/XlibWrapper.java:494:    static native void XQueryKeymap(long display, long vector);
+unix/classes/sun/awt/X11/XlibWrapper.java:495:    static native long XKeycodeToKeysym(long display, int keycode, int index);
+unix/classes/sun/awt/X11/XlibWrapper.java:497:    static native int XKeysymToKeycode(long display, long keysym);
+unix/classes/sun/awt/X11/XlibWrapper.java:500:    static native int XkbGetEffectiveGroup(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:501:    static native long XkbKeycodeToKeysym(long display, int keycode, int group, int level);
+unix/classes/sun/awt/X11/XlibWrapper.java:502:    static native void XkbSelectEvents(long display, long device, long bits_to_change, long values_for_bits);
+unix/classes/sun/awt/X11/XlibWrapper.java:503:    static native void XkbSelectEventDetails(long display, long device, long event_type,
+unix/classes/sun/awt/X11/XlibWrapper.java:505:    static native boolean XkbQueryExtension(long display, long opcode_rtrn, long event_rtrn,
+unix/classes/sun/awt/X11/XlibWrapper.java:507:    static native boolean XkbLibraryVersion(long lib_major_in_out, long lib_minor_in_out);
+unix/classes/sun/awt/X11/XlibWrapper.java:508:    static native long XkbGetMap(long display, long which, long device_spec);
+unix/classes/sun/awt/X11/XlibWrapper.java:509:    static native long XkbGetUpdatedMap(long display, long which, long xkb);
+unix/classes/sun/awt/X11/XlibWrapper.java:510:    static native void XkbFreeKeyboard(long xkb, long which, boolean free_all);
+unix/classes/sun/awt/X11/XlibWrapper.java:511:    static native boolean XkbTranslateKeyCode(long xkb, int keycode, long mods, long mods_rtrn, long keysym_rtrn);
+unix/classes/sun/awt/X11/XlibWrapper.java:512:    static native void XkbSetDetectableAutoRepeat(long display, boolean detectable);
+unix/classes/sun/awt/X11/XlibWrapper.java:515:    static native void XConvertCase(long keysym, long keysym_lowercase, long keysym_uppercase);
+unix/classes/sun/awt/X11/XlibWrapper.java:519:    static native long XGetModifierMapping(long display);
+unix/classes/sun/awt/X11/XlibWrapper.java:520:    static native void XFreeModifiermap(long keymap);
+unix/classes/sun/awt/X11/XlibWrapper.java:521:    static native void XRefreshKeyboardMapping(long event);
+unix/classes/sun/awt/X11/XlibWrapper.java:524:    static native void XChangeActivePointerGrab(long display, int mask,
+unix/classes/sun/awt/X11/XlibWrapper.java:532:    static native int XSynchronize(long display, boolean onoff);
+unix/classes/sun/awt/X11/XlibWrapper.java:539:    static native boolean XNextSecondaryLoopEvent(long display, long ptr);
+unix/classes/sun/awt/X11/XlibWrapper.java:544:    static native void ExitSecondaryLoop();
+unix/classes/sun/awt/X11/XlibWrapper.java:550:    static native String[] XTextPropertyToStringList(byte[] bytes, long encoding_atom);
+unix/classes/sun/awt/X11/XlibWrapper.java:555:    static native boolean XShapeQueryExtension(long display, long event_base_return, long error_base_return);
+unix/classes/sun/awt/X11/XlibWrapper.java:556:    static native void SetRectangularShape(long display, long window, int lox, int loy, int hix, int hiy, sun.java2d.pipe.Region region);
+unix/classes/sun/awt/X11/XlibWrapper.java:562:    static native void SetBitmapShape(long display, long window,
+unix/classes/sun/awt/X11/XlibWrapper.java:565:    static native void SetZOrder(long display, long window, long above);
+unix/classes/sun/awt/X11/XlibWrapper.java:653:    static native void PrintXErrorEvent(long display, long event_ptr);
+unix/classes/sun/awt/X11/XRobotPeer.java:123:    private static native void loadNativeLibraries();
+unix/classes/sun/awt/X11/XTaskbarPeer.java:168:    private static native boolean init(String name, int version,
+unix/classes/sun/awt/X11/XTaskbarPeer.java:171:    private static native void runloop();
+unix/classes/sun/awt/X11/XToolkit.java:145:    static native long getTrayIconDisplayTimeout();
+unix/classes/sun/awt/X11/XToolkit.java:147:    private static native void initIDs();
+unix/classes/sun/awt/X11/XToolkit.java:148:    static native void waitForEvents(long nextTaskTime);
+unix/classes/sun/awt/X11/XToolkit.java:165:    static native void awt_output_flush();
+unix/classes/sun/awt/X11/XToolkit.java:305:    static native String getEnv(String key);
+unix/classes/sun/awt/X11/XToolkit.java:547:    static native void awt_toolkit_init();
+unix/classes/sun/awt/X11/XToolkit.java:1365:    static native long getDefaultXColormap();
+unix/classes/sun/awt/X11/XToolkit.java:1366:    static native long getDefaultScreenData();
+unix/classes/sun/awt/X11/XToolkit.java:1938:    static native void wakeup_poll();
+unix/classes/sun/awt/X11/XWindow.java:124:    private static native void initIDs();
+unix/classes/sun/awt/X11/XWindow.java:1486:    static native int getAWTKeyCodeForKeySym(int keysym);
+unix/classes/sun/awt/X11/XWindow.java:1487:    static native int getKeySymForAWTKeyCode(int keycode);
+unix/classes/sun/awt/X11/XWindowPeer.java:209:    private static native String getLocalHostname();
+unix/classes/sun/awt/X11/XWindowPeer.java:210:    private static native int getJvmPID();
+unix/classes/sun/awt/X11GraphicsConfig.java:317:    private static native void initIDs();
+unix/classes/sun/awt/X11GraphicsConfig.java:361:    private static native void dispose(long x11ConfigData);
+unix/classes/sun/awt/X11GraphicsDevice.java:77:    private static native void initIDs();
+unix/classes/sun/awt/X11GraphicsDevice.java:212:    static native boolean isDBESupported();
+unix/classes/sun/awt/X11GraphicsDevice.java:274:    private static native void enterFullScreenExclusive(long window);
+unix/classes/sun/awt/X11GraphicsDevice.java:275:    private static native void exitFullScreenExclusive(long window);
+unix/classes/sun/awt/X11GraphicsDevice.java:276:    private static native boolean initXrandrExtension();
+unix/classes/sun/awt/X11GraphicsDevice.java:277:    private static native DisplayMode getCurrentDisplayMode(int screen);
+unix/classes/sun/awt/X11GraphicsDevice.java:278:    private static native void enumDisplayModes(int screen,
+unix/classes/sun/awt/X11GraphicsDevice.java:280:    private static native void configDisplayMode(int screen,
+unix/classes/sun/awt/X11GraphicsDevice.java:283:    private static native void resetNativeData(int screen);
+unix/classes/sun/awt/X11GraphicsDevice.java:284:    private static native double getNativeScaleFactor(int screen);
+unix/classes/sun/awt/X11GraphicsEnvironment.java:141:    private static native boolean initGLX();
+unix/classes/sun/awt/X11GraphicsEnvironment.java:154:    private static native boolean initXRender(boolean verbose, boolean ignoreLinuxVersion);
+unix/classes/sun/awt/X11GraphicsEnvironment.java:170:    private static native int checkShmExt();
+unix/classes/sun/awt/X11GraphicsEnvironment.java:179:    private static native void initDisplay(boolean glxRequested);
+unix/classes/sun/awt/X11GraphicsEnvironment.java:292:    private static native boolean pRunningXinerama();
+unix/classes/sun/awt/X11GraphicsEnvironment.java:293:    private static native Point getXineramaCenterPoint();
+unix/classes/sun/awt/X11InputMethod.java:168:    private static native void initIDs();
+unix/classes/sun/font/FontConfigManager.java:156:    public static native int getFontConfigVersion();
+unix/classes/sun/font/FontConfigManager.java:446:    private static native void getFontConfig(String locale,
+unix/classes/sun/font/FontConfigManager.java:465:    private static native int getFontConfigAASettings(String locale, String fcFamily);
+unix/classes/sun/font/NativeFont.java:235:    private static native boolean haveBitmapFonts(byte[] xlfd);
+unix/classes/sun/font/NativeFont.java:236:    private static native boolean fontExists(byte[] xlfd);
+unix/classes/sun/java2d/jules/JulesAATileGenerator.java:86:    private static native long rasterizeTrapezoidsNative (long pixmanImagePtr, int[] traps, int[] trapPos, int trapCnt, byte[] buffer, int xOff, int yOff);
+unix/classes/sun/java2d/jules/JulesAATileGenerator.java:91:    private static native void freePixmanImgPtr(long pixmanImgPtr);
+unix/classes/sun/java2d/jules/JulesPathBuf.java:232:    private static native int[] tesselateStrokeNative(int[] pointArray, byte[] ops, int pointCnt, int opCnt, int[] xTrapArray, int xTrapArrayLength,  double lineWidth, int lineCap, int lineJoin,                            
+unix/classes/sun/java2d/jules/JulesPathBuf.java:244:    private static native int[] tesselateFillNative(int[] pointArray, byte[] ops, int pointCnt,
+unix/classes/sun/java2d/opengl/GLXGraphicsConfig.java:72:    private static native long getGLXConfigInfo(int screennum, int visualnum);
+unix/classes/sun/java2d/opengl/GLXGraphicsConfig.java:73:    private static native int getOGLCapabilities(long configInfo);
+unix/classes/sun/java2d/x11/X11PMBlitLoops.java:210:    private static native void updateBitmask(SurfaceData src,
+unix/classes/sun/java2d/x11/X11SurfaceData.java:75:    private static native void initIDs(Class<?> xorComp, boolean tryDGA);
+unix/classes/sun/java2d/x11/X11SurfaceData.java:254:    public static native boolean isDgaAvailable();
+unix/classes/sun/java2d/x11/X11SurfaceData.java:259:    private static native boolean isShmPMAvailable();
+unix/classes/sun/java2d/x11/X11SurfaceData.java:626:    private static native void XSetCopyMode(long xgc);
+unix/classes/sun/java2d/x11/X11SurfaceData.java:627:    private static native void XSetXorMode(long xgc);
+unix/classes/sun/java2d/x11/X11SurfaceData.java:628:    private static native void XSetForeground(long xgc, int pixel);
+unix/classes/sun/java2d/x11/XSurfaceData.java:51:    protected static native long XCreateGC(long pXSData);
+unix/classes/sun/java2d/x11/XSurfaceData.java:53:    protected static native void XResetClip(long xgc);
+unix/classes/sun/java2d/x11/XSurfaceData.java:55:    protected static native void XSetClip(long xgc, int lox, int loy, int hix, int hiy, Region complexclip);
+unix/classes/sun/java2d/x11/XSurfaceData.java:63:    protected static native void XSetGraphicsExposures(long xgc, boolean needExposures);
+unix/classes/sun/java2d/xr/XIDGenerator.java:52:    private static native void bufferXIDs(int[] buffer, int arraySize);
+unix/classes/sun/java2d/xr/XRBackendNative.java:54:    private static native void initIDs();
+unix/classes/sun/java2d/xr/XRBackendNative.java:81:    private static native void GCRectanglesNative(int drawable, long gc,
+unix/classes/sun/java2d/xr/XRBackendNative.java:94:    private static native void XRenderRectanglesNative
+unix/classes/sun/java2d/xr/XRBackendNative.java:104:    private static native int XRCreateLinearGradientPaintNative
+unix/classes/sun/java2d/xr/XRBackendNative.java:110:    private static native int  XRCreateRadialGradientPaintNative(float[] fractionsArray, short[] pixelsArray, int numStops, int centerX, int centerY, int innerRadius, int outerRadius, int repeat);
+unix/classes/sun/java2d/xr/XRBackendNative.java:119:    private static native void XRSetClipNative(long dst,
+unix/classes/sun/java2d/xr/XRBackendNative.java:245:    private static native void XRAddGlyphsNative(int glyphSet,
+unix/classes/sun/java2d/xr/XRBackendNative.java:251:    private static native void XRFreeGlyphsNative(int glyphSet,
+unix/classes/sun/java2d/xr/XRBackendNative.java:254:    private static native void XRenderCompositeTextNative
+unix/classes/sun/java2d/xr/XRBackendNative.java:264:    private static native int XRenderCreateGlyphSetNative(long format);
+unix/classes/sun/java2d/xr/XRBackendNative.java:285:    private static native void putMaskNative(int drawable, long gc,
+unix/classes/sun/java2d/xr/XRBackendNative.java:308:    private static native void padBlitNative(byte op, int srcPict,
+unix/classes/sun/java2d/xr/XRBackendNative.java:326:    private static native void renderCompositeTrapezoidsNative(byte op, int src, long maskFormat, int dst, int srcX, int srcY, int[] trapezoids);
+unix/classes/sun/java2d/xr/XRSurfaceData.java:51:    private static native void initIDs();
+unix/classes/sun/print/CUPSPrinter.java:53:    private static native String getCupsServer();
+unix/classes/sun/print/CUPSPrinter.java:54:    private static native int getCupsPort();
+unix/classes/sun/print/CUPSPrinter.java:55:    private static native String getCupsDefaultPrinter();
+unix/classes/sun/print/CUPSPrinter.java:56:    private static native boolean canConnect(String server, int port);
+unix/classes/sun/print/CUPSPrinter.java:57:    private static native boolean initIDs();
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:77:    private static native void initIDs();
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:405:    static native long getNextPIDLEntry(long pIDL);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:412:    static native long copyFirstPIDLEntry(long pIDL);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:415:    private static native long combinePIDLs(long ppIDL, long pIDL);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:419:    static native void releasePIDL(long pIDL);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:423:    private static native void releaseIShellFolder(long pIShellFolder);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:558:    private static native int compareIDs(long pParentIShellFolder, long pidl1, long pidl2);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:598:    private static native int getAttributes0(long pParentIShellFolder, long pIDL, int attrsMask);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:653:    private static native String getFileSystemPath0(int csidl) throws IOException;
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:718:    private static native long bindToObject(long parentIShellFolder, long pIDL);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:848:    private static native long getLinkLocation(long parentIShellFolder,
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:896:    private static native long parseDisplayName0(long pIShellFolder, String name) throws IOException;
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:900:    private static native String getDisplayNameOf(long parentIShellFolder,
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:905:    private static native KnownFolderDefinition[] loadKnownFolders();
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:925:    private static native String getFolderType(long pIDL);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:966:    private static native long getIShellIcon(long pIShellFolder);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:969:    private static native int getIconIndex(long parentIShellIcon, long relativePIDL);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:972:    private static native long getIcon(String absolutePath, boolean getLargeIcon);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:975:    private static native long extractIcon(long parentIShellFolder, long relativePIDL,
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:979:    private static native long getSystemIcon(int iconID);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:980:    private static native long getIconResource(String libName, int iconID,
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:987:    private static native int[] getIconBits(long hIcon);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:989:    private static native void disposeIcon(long hIcon);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:992:    static native int[] getStandardViewButton0(int iconIndex, boolean small);
+windows/classes/sun/awt/shell/Win32ShellFolder2.java:1243:    private static native int compareIDsByColumn(long pParentIShellFolder, long pidl1, long pidl2, int columnIdx);
+windows/classes/sun/awt/shell/Win32ShellFolderManager2.java:612:    static native void initializeCom();
+windows/classes/sun/awt/shell/Win32ShellFolderManager2.java:614:    static native void uninitializeCom();
+windows/classes/sun/awt/Win32FontManager.java:80:    private static native String getEUDCFontFile();
+windows/classes/sun/awt/Win32FontManager.java:204:    private static native void populateFontFileNameMap0();
+windows/classes/sun/awt/Win32FontManager.java:282:    private static native void registerFontWithPlatform(String fontName);
+windows/classes/sun/awt/Win32FontManager.java:284:    private static native void deRegisterFontWithPlatform(String fontName);
+windows/classes/sun/awt/Win32GraphicsConfig.java:74:    private static native void initIDs();
+windows/classes/sun/awt/Win32GraphicsDevice.java:106:    private static native void initIDs();
+windows/classes/sun/awt/Win32GraphicsEnvironment.java:89:    private static native void initDisplay();
+windows/classes/sun/awt/Win32GraphicsEnvironment.java:272:    public static native boolean isVistaOS();
+windows/classes/sun/awt/windows/ThemeReader.java:73:    public static native boolean isThemed();
+windows/classes/sun/awt/windows/ThemeReader.java:134:    private static native void paintBackground(int[] buffer, long theme,
+windows/classes/sun/awt/windows/ThemeReader.java:148:    private static native Insets getThemeMargins(long theme, int part,
+windows/classes/sun/awt/windows/ThemeReader.java:160:    private static native boolean isThemePartDefined(long theme, int part, int state);
+windows/classes/sun/awt/windows/ThemeReader.java:171:    private static native Color getColor(long theme, int part, int state,
+windows/classes/sun/awt/windows/ThemeReader.java:183:    private static native int getInt(long theme, int part, int state,
+windows/classes/sun/awt/windows/ThemeReader.java:195:    private static native int getEnum(long theme, int part, int state,
+windows/classes/sun/awt/windows/ThemeReader.java:207:    private static native boolean getBoolean(long theme, int part, int state,
+windows/classes/sun/awt/windows/ThemeReader.java:220:    private static native boolean getSysBoolean(long theme, int property);
+windows/classes/sun/awt/windows/ThemeReader.java:231:    private static native Point getPoint(long theme, int part, int state,
+windows/classes/sun/awt/windows/ThemeReader.java:243:    private static native Dimension getPosition(long theme, int part, int state,
+windows/classes/sun/awt/windows/ThemeReader.java:256:    private static native Dimension getPartSize(long theme, int part,
+windows/classes/sun/awt/windows/ThemeReader.java:268:    private static native long openTheme(String widget);
+windows/classes/sun/awt/windows/ThemeReader.java:270:    private static native void closeTheme(long theme);
+windows/classes/sun/awt/windows/ThemeReader.java:272:    private static native void setWindowTheme(String subAppName);
+windows/classes/sun/awt/windows/ThemeReader.java:274:    private static native long getThemeTransitionDuration(long theme, int part,
+windows/classes/sun/awt/windows/ThemeReader.java:288:    public static native boolean isGetThemeTransitionDurationDefined();
+windows/classes/sun/awt/windows/ThemeReader.java:290:    private static native Insets getThemeBackgroundContentMargins(long theme,
+windows/classes/sun/awt/windows/WButtonPeer.java:95:    private static native void initIDs();
+windows/classes/sun/awt/windows/WCheckboxPeer.java:42:    private static native int getCheckMarkSize();
+windows/classes/sun/awt/windows/WClipboard.java:130:    private static native void init();
+windows/classes/sun/awt/windows/WColor.java:44:    static native Color getDefaultColor(int index);
+windows/classes/sun/awt/windows/WCustomCursor.java:99:    static native int getCursorWidth();
+windows/classes/sun/awt/windows/WCustomCursor.java:104:    static native int getCursorHeight();
+windows/classes/sun/awt/windows/WDataTransferer.java:328:    private static native long registerClipboardFormat(String str);
+windows/classes/sun/awt/windows/WDataTransferer.java:334:    private static native String getClipboardFormatName(long format);
+windows/classes/sun/awt/windows/WDefaultFontCharset.java:61:    private static native void initIDs();
+windows/classes/sun/awt/windows/WDesktopPeer.java:59:    private static native void init();
+windows/classes/sun/awt/windows/WDesktopPeer.java:127:    private static native String ShellExecute(String fileOrUri, String verb);
+windows/classes/sun/awt/windows/WDesktopPeer.java:141:    private static native void setSuddenTerminationEnabled(boolean enable);
+windows/classes/sun/awt/windows/WDesktopPeer.java:193:    private static native boolean moveToTrash(String file);
+windows/classes/sun/awt/windows/WDesktopProperties.java:74:    private static native void initIDs();
+windows/classes/sun/awt/windows/WEmbeddedFrame.java:223:    private static native void initIDs();
+windows/classes/sun/awt/windows/WFileDialogPeer.java:52:    private static native void setFilterString(String allFilter);
+windows/classes/sun/awt/windows/WFileDialogPeer.java:310:    private static native void initIDs();
+windows/classes/sun/awt/windows/WFontMetrics.java:215:    private static native void initIDs();
+windows/classes/sun/awt/windows/WFontPeer.java:54:    private static native void initIDs();
+windows/classes/sun/awt/windows/WFramePeer.java:41:    private static native void initIDs();
+windows/classes/sun/awt/windows/WFramePeer.java:211:    private static native int getSysMenuHeight();
+windows/classes/sun/awt/windows/WInputMethod.java:649:    static native Locale getNativeLocale();
+windows/classes/sun/awt/windows/WInputMethod.java:650:    static native boolean setNativeLocale(String localeName, boolean onActivate);
+windows/classes/sun/awt/windows/WInputMethodDescriptor.java:100:    private static native Locale[] getNativeAvailableLocales();
+windows/classes/sun/awt/windows/WKeyboardFocusManagerPeer.java:38:    static native void setNativeFocusOwner(ComponentPeer peer);
+windows/classes/sun/awt/windows/WKeyboardFocusManagerPeer.java:39:    static native Component getNativeFocusOwner();
+windows/classes/sun/awt/windows/WKeyboardFocusManagerPeer.java:40:    static native Window getNativeFocusedWindow();
+windows/classes/sun/awt/windows/WMenuItemPeer.java:185:    private static native void initIDs();
+windows/classes/sun/awt/windows/WObjectPeer.java:98:    private static native void initIDs();
+windows/classes/sun/awt/windows/WPageDialog.java:78:    private static native void initIDs();
+windows/classes/sun/awt/windows/WPanelPeer.java:71:    private static native void initIDs();
+windows/classes/sun/awt/windows/WPrintDialog.java:90:    private static native void initIDs();
+windows/classes/sun/awt/windows/WPrintDialogPeer.java:182:    private static native void initIDs();
+windows/classes/sun/awt/windows/WPrinterJob.java:1398:    private static native void deleteDC(long dc, long devmode, long devnames);
+windows/classes/sun/awt/windows/WPrinterJob.java:2255:    private static native void initIDs();
+windows/classes/sun/awt/windows/WScrollbarPeer.java:35:    static native int getScrollbarSize(int orientation);
+windows/classes/sun/awt/windows/WScrollPanePeer.java:50:    static native void initIDs();
+windows/classes/sun/awt/windows/WTaskbarPeer.java:142:    private static native boolean nativeInit();
+windows/classes/sun/awt/windows/WTextComponentPeer.java:113:    private static native void initIDs();
+windows/classes/sun/awt/windows/WToolkit.java:102:    private static native void initIDs();
+windows/classes/sun/awt/windows/WToolkit.java:118:    private static native String getWindowsVersion();
+windows/classes/sun/awt/windows/WToolkit.java:143:    private static native void disableCustomPalette();
+windows/classes/sun/awt/windows/WToolkit.java:176:    public static native boolean embeddedInit();
+windows/classes/sun/awt/windows/WToolkit.java:189:    public static native boolean embeddedDispose();
+windows/classes/sun/awt/windows/WToolkit.java:217:    private static native void postDispose();
+windows/classes/sun/awt/windows/WToolkit.java:219:    private static native boolean startToolkitThread(Runnable thread, ThreadGroup rootThreadGroup);
+windows/classes/sun/awt/windows/WToolkit.java:327:    static native void startSecondaryEventLoop();
+windows/classes/sun/awt/windows/WToolkit.java:328:    static native void quitSecondaryEventLoop();
+windows/classes/sun/awt/windows/WToolkit.java:598:    static native ColorModel makeColorModel();
+windows/classes/sun/awt/windows/WToolkit.java:1110:    private static native void setExtraMouseButtonsEnabledNative(boolean enable);
+windows/classes/sun/awt/windows/WWindowPeer.java:90:    private static native void initIDs();
+windows/classes/sun/awt/windows/WWindowPeer.java:290:    static native int getSysMinWidth();
+windows/classes/sun/awt/windows/WWindowPeer.java:291:    static native int getSysMinHeight();
+windows/classes/sun/awt/windows/WWindowPeer.java:292:    static native int getSysIconWidth();
+windows/classes/sun/awt/windows/WWindowPeer.java:293:    static native int getSysIconHeight();
+windows/classes/sun/awt/windows/WWindowPeer.java:294:    static native int getSysSmIconWidth();
+windows/classes/sun/awt/windows/WWindowPeer.java:295:    static native int getSysSmIconHeight();
+windows/classes/sun/java2d/d3d/D3DGraphicsDevice.java:63:    private static native boolean initD3D();
+windows/classes/sun/java2d/d3d/D3DGraphicsDevice.java:107:    private static native int getDeviceCapsNative(int screen);
+windows/classes/sun/java2d/d3d/D3DGraphicsDevice.java:108:    private static native String getDeviceIdNative(int screen);
+windows/classes/sun/java2d/d3d/D3DGraphicsDevice.java:179:    private static native boolean enterFullScreenExclusiveNative(int screen,
+windows/classes/sun/java2d/d3d/D3DGraphicsDevice.java:209:    private static native boolean exitFullScreenExclusiveNative(int screen);
+windows/classes/sun/java2d/d3d/D3DGraphicsDevice.java:317:    private static native DisplayMode getCurrentDisplayModeNative(int screen);
+windows/classes/sun/java2d/d3d/D3DGraphicsDevice.java:340:    private static native void configDisplayModeNative(int screen, long hwnd,
+windows/classes/sun/java2d/d3d/D3DGraphicsDevice.java:389:    private static native void enumDisplayModesNative(int screen,
+windows/classes/sun/java2d/d3d/D3DGraphicsDevice.java:409:    private static native long getAvailableAcceleratedMemoryNative(int screen);
+windows/classes/sun/java2d/d3d/D3DGraphicsDevice.java:457:    private static native boolean isD3DAvailableOnDeviceNative(int screen);
+windows/classes/sun/java2d/d3d/D3DSurfaceData.java:454:    private static native int  dbGetPixelNative(long pData, int x, int y);
+windows/classes/sun/java2d/d3d/D3DSurfaceData.java:455:    private static native void dbSetPixelNative(long pData, int x, int y,
+windows/classes/sun/java2d/d3d/D3DSurfaceData.java:886:    private static native long getNativeResourceNative(long sdops, int resType);
+windows/classes/sun/java2d/d3d/D3DSurfaceData.java:1023:    public static native boolean updateWindowAccelImpl(long pd3dsd, long pData,
+windows/classes/sun/java2d/opengl/WGLGraphicsConfig.java:72:    public static native int getDefaultPixFmt(int screennum);
+windows/classes/sun/java2d/opengl/WGLGraphicsConfig.java:73:    private static native boolean initWGL();
+windows/classes/sun/java2d/opengl/WGLGraphicsConfig.java:74:    private static native long getWGLConfigInfo(int screennum, int visualnum);
+windows/classes/sun/java2d/opengl/WGLGraphicsConfig.java:75:    private static native int getOGLCapabilities(long configInfo);
+windows/classes/sun/java2d/opengl/WGLSurfaceData.java:270:    public static native boolean updateWindowAccelImpl(long psdops,
+windows/classes/sun/java2d/windows/GDIWindowSurfaceData.java:79:    private static native void initIDs(Class<?> xorComp);
+windows/classes/sun/java2d/windows/WindowsFlags.java:121:    private static native boolean initNativeFlags();
+aix/classes/sun/nio/ch/AixPollPort.java:516:    private static native void init();
+aix/classes/sun/nio/ch/AixPollPort.java:518:    private static native int eventSize();
+aix/classes/sun/nio/ch/AixPollPort.java:520:    private static native int eventsOffset();
+aix/classes/sun/nio/ch/AixPollPort.java:522:    private static native int reventsOffset();
+aix/classes/sun/nio/ch/AixPollPort.java:524:    private static native int fdOffset();
+aix/classes/sun/nio/ch/AixPollPort.java:526:    private static native int pollsetCreate() throws IOException;
+aix/classes/sun/nio/ch/AixPollPort.java:528:    private static native int pollsetCtl(int pollset, int opcode, int fd, int events);
+aix/classes/sun/nio/ch/AixPollPort.java:530:    private static native int pollsetPoll(int pollset, long pollAddress, int numfds)
+aix/classes/sun/nio/ch/AixPollPort.java:533:    private static native void pollsetDestroy(int pollset);
+aix/classes/sun/nio/ch/AixPollPort.java:535:    private static native void socketpair(int[] sv) throws IOException;
+aix/classes/sun/nio/ch/AixPollPort.java:537:    private static native void interrupt(int fd) throws IOException;
+aix/classes/sun/nio/ch/AixPollPort.java:539:    private static native void drain1(int fd) throws IOException;
+aix/classes/sun/nio/ch/AixPollPort.java:541:    private static native void close0(int fd);
+aix/classes/sun/nio/fs/AixNativeDispatcher.java:43:    static native UnixMountEntry[] getmntctl() throws UnixException;
+aix/classes/sun/nio/fs/AixNativeDispatcher.java:46:    private static native void init();
+linux/classes/sun/nio/ch/EPoll.java:102:    private static native int eventSize();
+linux/classes/sun/nio/ch/EPoll.java:104:    private static native int eventsOffset();
+linux/classes/sun/nio/ch/EPoll.java:106:    private static native int dataOffset();
+linux/classes/sun/nio/ch/EPoll.java:108:    static native int epollCreate() throws IOException;
+linux/classes/sun/nio/ch/EPoll.java:110:    static native int epollCtl(int epfd, int opcode, int fd, int events);
+linux/classes/sun/nio/ch/EPoll.java:112:    static native int epollWait(int epfd, long pollAddress, int numfds)
+linux/classes/sun/nio/ch/EPollArrayWrapper.java:337:    private static native int sizeofEPollEvent();
+linux/classes/sun/nio/ch/EPollArrayWrapper.java:338:    private static native int offsetofData();
+linux/classes/sun/nio/ch/EPollArrayWrapper.java:339:    private static native void interrupt(int fd);
+linux/classes/sun/nio/ch/EPollArrayWrapper.java:340:    private static native void init();
+linux/classes/sun/nio/ch/EPollPort.java:312:    private static native void socketpair(int[] sv) throws IOException;
+linux/classes/sun/nio/ch/EPollPort.java:314:    private static native void interrupt(int fd) throws IOException;
+linux/classes/sun/nio/ch/EPollPort.java:316:    private static native void drain1(int fd) throws IOException;
+linux/classes/sun/nio/ch/EPollPort.java:318:    private static native void close0(int fd);
+linux/classes/sun/nio/fs/LinuxNativeDispatcher.java:51:    private static native long setmntent0(long pathAddress, long typeAddress)
+linux/classes/sun/nio/fs/LinuxNativeDispatcher.java:57:    static native int getmntent(long fp, UnixMountEntry entry)
+linux/classes/sun/nio/fs/LinuxNativeDispatcher.java:63:    static native void endmntent(long stream) throws UnixException;
+linux/classes/sun/nio/fs/LinuxNativeDispatcher.java:79:    private static native int fgetxattr0(int filedes, long nameAddress,
+linux/classes/sun/nio/fs/LinuxNativeDispatcher.java:96:    private static native void fsetxattr0(int filedes, long nameAddress,
+linux/classes/sun/nio/fs/LinuxNativeDispatcher.java:111:    private static native void fremovexattr0(int filedes, long nameAddress)
+linux/classes/sun/nio/fs/LinuxNativeDispatcher.java:117:    static native int flistxattr(int filedes, long listAddress, int size)
+linux/classes/sun/nio/fs/LinuxNativeDispatcher.java:121:    private static native void init();
+linux/classes/sun/nio/fs/LinuxWatchService.java:441:    private static native int eventSize();
+linux/classes/sun/nio/fs/LinuxWatchService.java:444:    private static native int[] eventOffsets();
+linux/classes/sun/nio/fs/LinuxWatchService.java:446:    private static native int inotifyInit() throws UnixException;
+linux/classes/sun/nio/fs/LinuxWatchService.java:448:    private static native int inotifyAddWatch(int fd, long pathAddress, int mask)
+linux/classes/sun/nio/fs/LinuxWatchService.java:451:    private static native void inotifyRmWatch(int fd, int wd)
+linux/classes/sun/nio/fs/LinuxWatchService.java:454:    private static native void configureBlocking(int fd, boolean blocking)
+linux/classes/sun/nio/fs/LinuxWatchService.java:457:    private static native void socketpair(int[] sv) throws UnixException;
+linux/classes/sun/nio/fs/LinuxWatchService.java:459:    private static native int poll(int fd1, int fd2) throws UnixException;
+macosx/classes/sun/nio/ch/KQueue.java:102:    private static native int keventSize();
+macosx/classes/sun/nio/ch/KQueue.java:104:    private static native int identOffset();
+macosx/classes/sun/nio/ch/KQueue.java:106:    private static native int filterOffset();
+macosx/classes/sun/nio/ch/KQueue.java:108:    private static native int flagsOffset();
+macosx/classes/sun/nio/ch/KQueue.java:110:    static native int kqueue() throws IOException;
+macosx/classes/sun/nio/ch/KQueue.java:112:    static native int keventRegister(int kqpfd, int fd, int filter, int flags);
+macosx/classes/sun/nio/ch/KQueue.java:114:    static native int keventPoll(int kqpfd, long pollAddress, int nevents)
+macosx/classes/sun/nio/ch/KQueueArrayWrapper.java:205:    private static native void initStructSizes();
+macosx/classes/sun/nio/ch/KQueueArrayWrapper.java:210:    private static native void interrupt(int fd);
+macosx/classes/sun/nio/ch/KQueuePort.java:320:    private static native void socketpair(int[] sv) throws IOException;
+macosx/classes/sun/nio/ch/KQueuePort.java:322:    private static native void interrupt(int fd) throws IOException;
+macosx/classes/sun/nio/ch/KQueuePort.java:324:    private static native void drain1(int fd) throws IOException;
+macosx/classes/sun/nio/ch/KQueuePort.java:326:    private static native void close0(int fd);
+macosx/classes/sun/nio/fs/BsdNativeDispatcher.java:41:    static native long getfsstat() throws UnixException;
+macosx/classes/sun/nio/fs/BsdNativeDispatcher.java:46:    static native int fsstatEntry(long iter, UnixMountEntry entry)
+macosx/classes/sun/nio/fs/BsdNativeDispatcher.java:52:    static native void endfsstat(long iter) throws UnixException;
+macosx/classes/sun/nio/fs/BsdNativeDispatcher.java:55:    private static native void initIDs();
+macosx/classes/sun/nio/fs/MacOSXNativeDispatcher.java:40:    static native char[] normalizepath(char[] path, int form);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:870:    private static native String getDefaultLocale(int cat);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:873:    private static native String getDateTimePatternNative(int dateStyle, int timeStyle, String langtag);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:874:    private static native String getCalendarID(String langTag);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:877:    private static native String getNumberPatternNative(int style, String langtag);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:880:    private static native String[] getAmPmStrings(String langTag, String[] ampm);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:881:    private static native String[] getEras(String langTag, String[] eras);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:882:    private static native String[] getMonths(String langTag, String[] months);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:883:    private static native String[] getShortMonths(String langTag, String[] smonths);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:884:    private static native String[] getWeekdays(String langTag, String[] wdays);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:885:    private static native String[] getShortWeekdays(String langTag, String[] swdays);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:888:    private static native String getCurrencySymbol(String langTag, String currencySymbol);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:889:    private static native char getDecimalSeparator(String langTag, char decimalSeparator);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:890:    private static native char getGroupingSeparator(String langTag, char groupingSeparator);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:891:    private static native String getInfinity(String langTag, String infinity);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:892:    private static native String getInternationalCurrencySymbol(String langTag, String internationalCurrencySymbol);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:893:    private static native char getMinusSign(String langTag, char minusSign);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:894:    private static native char getMonetaryDecimalSeparator(String langTag, char monetaryDecimalSeparator);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:895:    private static native String getNaN(String langTag, String nan);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:896:    private static native char getPercent(String langTag, char percent);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:897:    private static native char getPerMill(String langTag, char perMill);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:898:    private static native char getZeroDigit(String langTag, char zeroDigit);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:899:    private static native String getExponentSeparator(String langTag, String exponent);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:902:    private static native int getCalendarInt(String langTag, int type);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:905:    private static native String getDisplayString(String langTag, int key, String value);
+macosx/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:908:    private static native String getTimeZoneDisplayString(String langTag, int style, String value);
+share/classes/java/io/Console.java:374:    private static native String encoding();
+share/classes/java/io/Console.java:375:    private static native boolean echo(boolean on) throws IOException;
+share/classes/java/io/Console.java:559:    private static native boolean istty();
+share/classes/java/io/FileInputStream.java:404:    private static native void initIDs();
+share/classes/java/io/FileOutputStream.java:463:    private static native void initIDs();
+share/classes/java/io/ObjectInputStream.java:2380:    private static native void bytesToFloats(byte[] src, int srcpos,
+share/classes/java/io/ObjectInputStream.java:2388:    private static native void bytesToDoubles(byte[] src, int srcpos,
+share/classes/java/io/ObjectOutputStream.java:1594:    private static native void floatsToBytes(float[] src, int srcpos,
+share/classes/java/io/ObjectOutputStream.java:1602:    private static native void doublesToBytes(double[] src, int srcpos,
+share/classes/java/io/ObjectStreamClass.java:201:    private static native void initNative();
+share/classes/java/io/ObjectStreamClass.java:1820:    private static native boolean hasStaticInitializer(Class<?> cl);
+share/classes/java/io/RandomAccessFile.java:1178:    private static native void initIDs();
+share/classes/java/lang/Class.java:138:    private static native void registerNatives();
+share/classes/java/lang/Class.java:379:    private static native Class<?> forName0(String name, boolean initialize,
+share/classes/java/lang/Class.java:2780:    static native Class<?> getPrimitiveClass(String name);
+share/classes/java/lang/Class.java:3462:    private static native boolean desiredAssertionStatus0(Class<?> clazz);
+share/classes/java/lang/ClassLoader.java:230:    private static native void registerNatives();
+share/classes/java/lang/ClassLoader.java:1104:    static native Class<?> defineClass1(ClassLoader loader, String name, byte[] b, int off, int len,
+share/classes/java/lang/ClassLoader.java:1107:    static native Class<?> defineClass2(ClassLoader loader, String name, java.nio.ByteBuffer b,
+share/classes/java/lang/ClassLoader.java:2544:    static native String findBuiltinLib(String name);
+share/classes/java/lang/ClassLoader.java:2864:    private static native AssertionStatusDirectives retrieveDirectives();
+share/classes/java/lang/Double.java:898:    public static native long doubleToRawLongBits(double value);
+share/classes/java/lang/Double.java:962:    public static native double longBitsToDouble(long bits);
+share/classes/java/lang/Float.java:810:    public static native int floatToRawIntBits(float value);
+share/classes/java/lang/Float.java:872:    public static native float intBitsToFloat(int bits);
+share/classes/java/lang/invoke/MethodHandle.java:554:    /*non-public*/ static native @PolymorphicSignature Object linkToVirtual(Object... args) throws Throwable;
+share/classes/java/lang/invoke/MethodHandle.java:564:    /*non-public*/ static native @PolymorphicSignature Object linkToStatic(Object... args) throws Throwable;
+share/classes/java/lang/invoke/MethodHandle.java:574:    /*non-public*/ static native @PolymorphicSignature Object linkToSpecial(Object... args) throws Throwable;
+share/classes/java/lang/invoke/MethodHandle.java:584:    /*non-public*/ static native @PolymorphicSignature Object linkToInterface(Object... args) throws Throwable;
+share/classes/java/lang/invoke/MethodHandleNatives.java:50:    static native void init(MemberName self, Object ref);
+share/classes/java/lang/invoke/MethodHandleNatives.java:51:    static native void expand(MemberName self);
+share/classes/java/lang/invoke/MethodHandleNatives.java:52:    static native MemberName resolve(MemberName self, Class<?> caller) throws LinkageError, ClassNotFoundException;
+share/classes/java/lang/invoke/MethodHandleNatives.java:53:    static native int getMembers(Class<?> defc, String matchName, String matchSig,
+share/classes/java/lang/invoke/MethodHandleNatives.java:57:    static native long objectFieldOffset(MemberName self);  // e.g., returns vmindex
+share/classes/java/lang/invoke/MethodHandleNatives.java:58:    static native long staticFieldOffset(MemberName self);  // e.g., returns vmindex
+share/classes/java/lang/invoke/MethodHandleNatives.java:59:    static native Object staticFieldBase(MemberName self);  // e.g., returns clazz
+share/classes/java/lang/invoke/MethodHandleNatives.java:60:    static native Object getMemberVMInfo(MemberName self);  // returns {vmindex,vmtarget}
+share/classes/java/lang/invoke/MethodHandleNatives.java:65:    static native void setCallSiteTargetNormal(CallSite site, MethodHandle target);
+share/classes/java/lang/invoke/MethodHandleNatives.java:66:    static native void setCallSiteTargetVolatile(CallSite site, MethodHandle target);
+share/classes/java/lang/invoke/MethodHandleNatives.java:90:    private static native void clearCallSiteContext(CallSiteContext context);
+share/classes/java/lang/invoke/MethodHandleNatives.java:92:    private static native void registerNatives();
+share/classes/java/lang/invoke/MethodHandleNatives.java:193:    private static native int getNamedCon(int which, Object[] name);
+share/classes/java/lang/Module.java:1567:    private static native void defineModule0(Module module,
+share/classes/java/lang/Module.java:1574:    private static native void addReads0(Module from, Module to);
+share/classes/java/lang/Module.java:1577:    private static native void addExports0(Module from, String pn, Module to);
+share/classes/java/lang/Module.java:1580:    private static native void addExportsToAll0(Module from, String pn);
+share/classes/java/lang/Module.java:1583:    private static native void addExportsToAllUnnamed0(Module from, String pn);
+share/classes/java/lang/Object.java:41:    private static native void registerNatives();
+share/classes/java/lang/ProcessHandleImpl.java:79:    private static native void initNative();
+share/classes/java/lang/ProcessHandleImpl.java:188:    private static native int waitForProcessExit0(long pid, boolean reapvalue);
+share/classes/java/lang/ProcessHandleImpl.java:281:    private static native long getCurrentPid0();
+share/classes/java/lang/ProcessHandleImpl.java:310:    private static native long parent0(long pid, long startTime);
+share/classes/java/lang/ProcessHandleImpl.java:322:    private static native int getProcessPids0(long pid, long[] pids,
+share/classes/java/lang/ProcessHandleImpl.java:348:    private static native boolean destroy0(long pid, long startTime, boolean forcibly);
+share/classes/java/lang/ProcessHandleImpl.java:388:    private static native long isAlive0(long pid);
+share/classes/java/lang/ProcessHandleImpl.java:537:        private static native void initIDs();
+share/classes/java/lang/ref/Reference.java:154:    private static native Reference<Object> getAndClearReferencePendingList();
+share/classes/java/lang/ref/Reference.java:159:    private static native boolean hasReferencePendingList();
+share/classes/java/lang/ref/Reference.java:164:    private static native void waitForReferencePendingList();
+share/classes/java/lang/reflect/Array.java:126:    public static native int getLength(Object array)
+share/classes/java/lang/reflect/Array.java:145:    public static native Object get(Object array, int index)
+share/classes/java/lang/reflect/Array.java:164:    public static native boolean getBoolean(Object array, int index)
+share/classes/java/lang/reflect/Array.java:183:    public static native byte getByte(Object array, int index)
+share/classes/java/lang/reflect/Array.java:202:    public static native char getChar(Object array, int index)
+share/classes/java/lang/reflect/Array.java:221:    public static native short getShort(Object array, int index)
+share/classes/java/lang/reflect/Array.java:240:    public static native int getInt(Object array, int index)
+share/classes/java/lang/reflect/Array.java:259:    public static native long getLong(Object array, int index)
+share/classes/java/lang/reflect/Array.java:278:    public static native float getFloat(Object array, int index)
+share/classes/java/lang/reflect/Array.java:297:    public static native double getDouble(Object array, int index)
+share/classes/java/lang/reflect/Array.java:317:    public static native void set(Object array, int index, Object value)
+share/classes/java/lang/reflect/Array.java:337:    public static native void setBoolean(Object array, int index, boolean z)
+share/classes/java/lang/reflect/Array.java:357:    public static native void setByte(Object array, int index, byte b)
+share/classes/java/lang/reflect/Array.java:377:    public static native void setChar(Object array, int index, char c)
+share/classes/java/lang/reflect/Array.java:397:    public static native void setShort(Object array, int index, short s)
+share/classes/java/lang/reflect/Array.java:417:    public static native void setInt(Object array, int index, int i)
+share/classes/java/lang/reflect/Array.java:437:    public static native void setLong(Object array, int index, long l)
+share/classes/java/lang/reflect/Array.java:457:    public static native void setFloat(Object array, int index, float f)
+share/classes/java/lang/reflect/Array.java:477:    public static native void setDouble(Object array, int index, double d)
+share/classes/java/lang/reflect/Array.java:485:    private static native Object newArray(Class<?> componentType, int length)
+share/classes/java/lang/reflect/Array.java:488:    private static native Object multiNewArray(Class<?> componentType,
+share/classes/java/lang/Runtime.java:706:    private static native void runFinalization0();
+share/classes/java/lang/Shutdown.java:143:    static native void halt0(int status);
+share/classes/java/lang/Shutdown.java:146:    private static native void runAllFinalizers();
+share/classes/java/lang/StackStreamFactory.java:958:    private static native boolean checkStackWalkModes();
+share/classes/java/lang/StackTraceElement.java:550:    private static native void initStackTraceElements(StackTraceElement[] elements,
+share/classes/java/lang/StackTraceElement.java:555:    private static native void initStackTraceElement(StackTraceElement element,
+share/classes/java/lang/StrictMath.java:125:    public static native double sin(double a);
+share/classes/java/lang/StrictMath.java:135:    public static native double cos(double a);
+share/classes/java/lang/StrictMath.java:147:    public static native double tan(double a);
+share/classes/java/lang/StrictMath.java:160:    public static native double asin(double a);
+share/classes/java/lang/StrictMath.java:171:    public static native double acos(double a);
+share/classes/java/lang/StrictMath.java:183:    public static native double atan(double a);
+share/classes/java/lang/StrictMath.java:248:    public static native double log(double a);
+share/classes/java/lang/StrictMath.java:268:    public static native double log10(double a);
+share/classes/java/lang/StrictMath.java:287:    public static native double sqrt(double a);
+share/classes/java/lang/StrictMath.java:338:    public static native double IEEEremainder(double f1, double f2);
+share/classes/java/lang/StrictMath.java:528:    public static native double atan2(double y, double x);
+share/classes/java/lang/StrictMath.java:1471:    public static native double sinh(double x);
+share/classes/java/lang/StrictMath.java:1495:    public static native double cosh(double x);
+share/classes/java/lang/StrictMath.java:1526:    public static native double tanh(double x);
+share/classes/java/lang/StrictMath.java:1579:    public static native double expm1(double x);
+share/classes/java/lang/StrictMath.java:1610:    public static native double log1p(double x);
+share/classes/java/lang/StringCoding.java:670:    private static native void err(String msg);
+share/classes/java/lang/StringUTF16.java:1174:    private static native boolean isBigEndian();
+share/classes/java/lang/System.java:97:    private static native void registerNatives();
+share/classes/java/lang/System.java:288:    private static native void setIn0(InputStream in);
+share/classes/java/lang/System.java:289:    private static native void setOut0(PrintStream out);
+share/classes/java/lang/System.java:290:    private static native void setErr0(PrintStream err);
+share/classes/java/lang/System.java:386:    public static native long currentTimeMillis();
+share/classes/java/lang/System.java:430:    public static native long nanoTime();
+share/classes/java/lang/System.java:525:    public static native void arraycopy(Object src,  int  srcPos,
+share/classes/java/lang/System.java:541:    public static native int identityHashCode(Object x);
+share/classes/java/lang/System.java:565:    private static native Properties initProperties(Properties props);
+share/classes/java/lang/System.java:1872:    public static native String mapLibraryName(String libname);
+share/classes/java/lang/Thread.java:143:    private static native void registerNatives();
+share/classes/java/lang/Thread.java:264:    public static native Thread currentThread();
+share/classes/java/lang/Thread.java:282:    public static native void yield();
+share/classes/java/lang/Thread.java:301:    public static native void sleep(long millis) throws InterruptedException;
+share/classes/java/lang/Thread.java:1591:    public static native boolean holdsLock(Object obj);
+share/classes/java/lang/Thread.java:1787:    private static native StackTraceElement[][] dumpThreads(Thread[] threads);
+share/classes/java/lang/Thread.java:1788:    private static native Thread[] getThreads();
+share/classes/java/net/AbstractPlainDatagramSocketImpl.java:420:    private static native boolean isReusePortAvailable0();
+share/classes/java/net/AbstractPlainSocketImpl.java:778:    private static native boolean isReusePortAvailable0();
+share/classes/java/net/DatagramPacket.java:387:    private static native void init();
+share/classes/java/net/Inet4Address.java:367:    private static native void init();
+share/classes/java/net/Inet6Address.java:929:    private static native void init();
+share/classes/java/net/InetAddress.java:1646:    private static native void init();
+share/classes/java/net/InetAddress.java:1773:    static native boolean isIPv6Supported();
+share/classes/java/net/NetworkInterface.java:413:    private static native NetworkInterface[] getAll()
+share/classes/java/net/NetworkInterface.java:416:    private static native NetworkInterface getByName0(String name)
+share/classes/java/net/NetworkInterface.java:419:    private static native NetworkInterface getByIndex0(int index)
+share/classes/java/net/NetworkInterface.java:422:    private static native NetworkInterface getByInetAddress0(InetAddress addr)
+share/classes/java/net/NetworkInterface.java:538:    private static native boolean isUp0(String name, int ind) throws SocketException;
+share/classes/java/net/NetworkInterface.java:539:    private static native boolean isLoopback0(String name, int ind) throws SocketException;
+share/classes/java/net/NetworkInterface.java:540:    private static native boolean supportsMulticast0(String name, int ind) throws SocketException;
+share/classes/java/net/NetworkInterface.java:541:    private static native boolean isP2P0(String name, int ind) throws SocketException;
+share/classes/java/net/NetworkInterface.java:542:    private static native byte[] getMacAddr0(byte[] inAddr, String name, int ind) throws SocketException;
+share/classes/java/net/NetworkInterface.java:543:    private static native int getMTU0(String name, int ind) throws SocketException;
+share/classes/java/net/NetworkInterface.java:617:    private static native void init();
+share/classes/java/net/SocketInputStream.java:292:    private static native void init();
+share/classes/java/net/SocketOutputStream.java:184:    private static native void init();
+share/classes/java/security/AccessController.java:299:    public static native <T> T doPrivileged(PrivilegedAction<T> action);
+share/classes/java/security/AccessController.java:372:    public static native <T> T doPrivileged(PrivilegedAction<T> action,
+share/classes/java/security/AccessController.java:527:    public static native <T> T doPrivileged(PrivilegedExceptionAction<T> action) throws PrivilegedActionException;
+share/classes/java/security/AccessController.java:662:    public static native <T> T doPrivileged(PrivilegedExceptionAction<T> action, AccessControlContext context) throws PrivilegedActionException;
+share/classes/java/security/AccessController.java:807:    private static native AccessControlContext getStackAccessControlContext();
+share/classes/java/security/AccessController.java:816:    static native AccessControlContext getInheritedAccessControlContext();
+share/classes/java/util/concurrent/atomic/AtomicLong.java:69:    private static native boolean VMSupportsCS8();
+share/classes/java/util/TimeZone.java:612:    private static native String getSystemTimeZoneID(String javaHome);
+share/classes/java/util/TimeZone.java:618:    private static native String getSystemGMTOffsetID();
+share/classes/java/util/zip/Adler32.java:131:    private static native int update(int adler, int b);
+share/classes/java/util/zip/Adler32.java:134:    private static native int updateBytes(int adler, byte[] b, int off,
+share/classes/java/util/zip/Adler32.java:137:    private static native int updateByteBuffer(int adler, long addr,
+share/classes/java/util/zip/CRC32.java:131:    private static native int update(int crc, int b);
+share/classes/java/util/zip/CRC32.java:139:    private static native int updateBytes0(int crc, byte[] b, int off, int len);
+share/classes/java/util/zip/CRC32.java:165:    private static native int updateByteBuffer0(int alder, long addr,
+share/classes/java/util/zip/Deflater.java:576:    private static native void initIDs();
+share/classes/java/util/zip/Deflater.java:577:    private static native long init(int level, int strategy, boolean nowrap);
+share/classes/java/util/zip/Deflater.java:578:    private static native void setDictionary(long addr, byte[] b, int off, int len);
+share/classes/java/util/zip/Deflater.java:581:    private static native int getAdler(long addr);
+share/classes/java/util/zip/Deflater.java:582:    private static native void reset(long addr);
+share/classes/java/util/zip/Deflater.java:583:    private static native void end(long addr);
+share/classes/java/util/zip/Inflater.java:409:    private static native void initIDs();
+share/classes/java/util/zip/Inflater.java:410:    private static native long init(boolean nowrap);
+share/classes/java/util/zip/Inflater.java:411:    private static native void setDictionary(long addr, byte[] b, int off,
+share/classes/java/util/zip/Inflater.java:415:    private static native int getAdler(long addr);
+share/classes/java/util/zip/Inflater.java:416:    private static native void reset(long addr);
+share/classes/java/util/zip/Inflater.java:417:    private static native void end(long addr);
+share/classes/jdk/internal/loader/BootLoader.java:304:    private static native String[] getSystemPackageNames();
+share/classes/jdk/internal/loader/BootLoader.java:314:    private static native String getSystemPackageLocation(String name);
+share/classes/jdk/internal/loader/BootLoader.java:315:    private static native void setBootLoaderUnnamedModule0(Module module);
+share/classes/jdk/internal/misc/Signal.java:229:    private static native int findSignal0(String sigName);
+share/classes/jdk/internal/misc/Signal.java:237:    private static native long handle0(int sig, long nativeH);
+share/classes/jdk/internal/misc/Signal.java:239:    private static native void raise0(int sig);
+share/classes/jdk/internal/misc/Unsafe.java:55:    private static native void registerNatives();
+share/classes/jdk/internal/misc/VM.java:313:    private static native ClassLoader latestUserDefinedLoader0();
+share/classes/jdk/internal/misc/VM.java:330:    public static native long getuid();
+share/classes/jdk/internal/misc/VM.java:336:    public static native long geteuid();
+share/classes/jdk/internal/misc/VM.java:342:    public static native long getgid();
+share/classes/jdk/internal/misc/VM.java:348:    public static native long getegid();
+share/classes/jdk/internal/misc/VM.java:378:    public static native long getNanoTimeAdjustment(long offsetInSeconds);
+share/classes/jdk/internal/misc/VM.java:393:    public static native String[] getRuntimeArguments();
+share/classes/jdk/internal/misc/VM.java:398:    private static native void initialize();
+share/classes/jdk/internal/perf/Perf.java:541:    private static native void registerNatives();
+share/classes/jdk/internal/reflect/NativeConstructorAccessorImpl.java:69:    private static native Object newInstance0(Constructor<?> c, Object[] args)
+share/classes/jdk/internal/reflect/NativeMethodAccessorImpl.java:69:    private static native Object invoke0(Method m, Object obj, Object[] args);
+share/classes/jdk/internal/reflect/Reflection.java:65:    public static native Class<?> getCallerClass();
+share/classes/jdk/internal/reflect/Reflection.java:73:    public static native Class<?> getCallerClass(int depth);
+share/classes/jdk/internal/reflect/Reflection.java:84:    public static native int getClassAccessFlags(Class<?> c);
+share/classes/jdk/internal/vm/VMSupport.java:51:    private static native Properties initAgentProperties(Properties props);
+share/classes/jdk/internal/vm/VMSupport.java:109:    public static native String getVMTemporaryDirectory();
+share/classes/sun/net/sdp/SdpSupport.java:73:    private static native int create0() throws IOException;
+share/classes/sun/net/sdp/SdpSupport.java:75:    private static native void convert0(int fd) throws IOException;
+share/classes/sun/net/spi/DefaultProxySelector.java:360:    private static native boolean init();
+share/classes/sun/nio/ch/DatagramChannelImpl.java:1134:    private static native void initIDs();
+share/classes/sun/nio/ch/DatagramChannelImpl.java:1136:    private static native void disconnect0(FileDescriptor fd, boolean isIPv6)
+share/classes/sun/nio/ch/FileChannelImpl.java:1222:    private static native int unmap0(long address, long length);
+share/classes/sun/nio/ch/FileChannelImpl.java:1234:    private static native long initIDs();
+share/classes/sun/nio/ch/IOUtil.java:325:    static native boolean randomBytes(byte[] someBytes);
+share/classes/sun/nio/ch/IOUtil.java:332:    static native long makePipe(boolean blocking);
+share/classes/sun/nio/ch/IOUtil.java:334:    static native boolean drain(int fd) throws IOException;
+share/classes/sun/nio/ch/IOUtil.java:336:    public static native void configureBlocking(FileDescriptor fd,
+share/classes/sun/nio/ch/IOUtil.java:340:    public static native int fdVal(FileDescriptor fd);
+share/classes/sun/nio/ch/IOUtil.java:342:    static native void setfdVal(FileDescriptor fd, int value);
+share/classes/sun/nio/ch/IOUtil.java:344:    static native int fdLimit();
+share/classes/sun/nio/ch/IOUtil.java:346:    static native int iovMax();
+share/classes/sun/nio/ch/IOUtil.java:348:    static native void initIDs();
+share/classes/sun/nio/ch/Net.java:390:    private static native boolean isIPv6Available0();
+share/classes/sun/nio/ch/Net.java:392:    private static native boolean isReusePortAvailable0();
+share/classes/sun/nio/ch/Net.java:397:    private static native int isExclusiveBindAvailable();
+share/classes/sun/nio/ch/Net.java:399:    private static native boolean canIPv6SocketJoinIPv4Group0();
+share/classes/sun/nio/ch/Net.java:401:    private static native boolean canJoin6WithIPv4Group0();
+share/classes/sun/nio/ch/Net.java:419:    private static native int socket0(boolean preferIPv6, boolean stream, boolean reuse,
+share/classes/sun/nio/ch/Net.java:436:    private static native void bind0(FileDescriptor fd, boolean preferIPv6,
+share/classes/sun/nio/ch/Net.java:441:    static native void listen(FileDescriptor fd, int backlog) throws IOException;
+share/classes/sun/nio/ch/Net.java:457:    private static native int connect0(boolean preferIPv6,
+share/classes/sun/nio/ch/Net.java:468:    static native void shutdown(FileDescriptor fd, int how) throws IOException;
+share/classes/sun/nio/ch/Net.java:470:    private static native int localPort(FileDescriptor fd)
+share/classes/sun/nio/ch/Net.java:473:    private static native InetAddress localInetAddress(FileDescriptor fd)
+share/classes/sun/nio/ch/Net.java:482:    private static native int remotePort(FileDescriptor fd)
+share/classes/sun/nio/ch/Net.java:485:    private static native InetAddress remoteInetAddress(FileDescriptor fd)
+share/classes/sun/nio/ch/Net.java:494:    private static native int getIntOption0(FileDescriptor fd, boolean mayNeedConversion,
+share/classes/sun/nio/ch/Net.java:498:    private static native void setIntOption0(FileDescriptor fd, boolean mayNeedConversion,
+share/classes/sun/nio/ch/Net.java:502:    static native int poll(FileDescriptor fd, int events, long timeout)
+share/classes/sun/nio/ch/Net.java:526:    private static native int joinOrDrop4(boolean join, FileDescriptor fd, int group, int interf, int source)
+share/classes/sun/nio/ch/Net.java:547:    private static native int blockOrUnblock4(boolean block, FileDescriptor fd, int group,
+share/classes/sun/nio/ch/Net.java:569:    private static native int joinOrDrop6(boolean join, FileDescriptor fd, byte[] group, int index, byte[] source)
+share/classes/sun/nio/ch/Net.java:590:    static native int blockOrUnblock6(boolean block, FileDescriptor fd, byte[] group, int index, byte[] source)
+share/classes/sun/nio/ch/Net.java:593:    static native void setInterface4(FileDescriptor fd, int interf) throws IOException;
+share/classes/sun/nio/ch/Net.java:595:    static native int getInterface4(FileDescriptor fd) throws IOException;
+share/classes/sun/nio/ch/Net.java:597:    static native void setInterface6(FileDescriptor fd, int index) throws IOException;
+share/classes/sun/nio/ch/Net.java:599:    static native int getInterface6(FileDescriptor fd) throws IOException;
+share/classes/sun/nio/ch/Net.java:601:    private static native void initIDs();
+share/classes/sun/nio/ch/Net.java:614:    static native short pollinValue();
+share/classes/sun/nio/ch/Net.java:615:    static native short polloutValue();
+share/classes/sun/nio/ch/Net.java:616:    static native short pollerrValue();
+share/classes/sun/nio/ch/Net.java:617:    static native short pollhupValue();
+share/classes/sun/nio/ch/Net.java:618:    static native short pollnvalValue();
+share/classes/sun/nio/ch/Net.java:619:    static native short pollconnValue();
+share/classes/sun/nio/ch/ServerSocketChannelImpl.java:438:    private static native void initIDs();
+share/classes/sun/nio/ch/SocketChannelImpl.java:1027:    private static native int checkConnect(FileDescriptor fd,
+share/classes/sun/nio/ch/SocketChannelImpl.java:1031:    private static native int sendOutOfBandData(FileDescriptor fd, byte data)
+solaris/classes/sun/nio/ch/DevPollArrayWrapper.java:321:    private static native void interrupt(int fd);
+solaris/classes/sun/nio/ch/SolarisEventPort.java:226:    static native int port_create() throws IOException;
+solaris/classes/sun/nio/ch/SolarisEventPort.java:231:    static native boolean port_associate(int port, int source, long object, int events)
+solaris/classes/sun/nio/ch/SolarisEventPort.java:237:    static native boolean port_dissociate(int port, int source, long object)
+solaris/classes/sun/nio/ch/SolarisEventPort.java:243:    static native void port_get(int port, long pe) throws IOException;
+solaris/classes/sun/nio/ch/SolarisEventPort.java:248:    static native int port_getn(int port, long address, int max, long timeout)
+solaris/classes/sun/nio/ch/SolarisEventPort.java:254:    static native void port_send(int port, int events) throws IOException;
+solaris/classes/sun/nio/ch/SolarisEventPort.java:259:    static native void port_close(int port);
+solaris/classes/sun/nio/fs/SolarisNativeDispatcher.java:41:    static native int getextmntent(long fp, UnixMountEntry entry)
+solaris/classes/sun/nio/fs/SolarisNativeDispatcher.java:47:    static native int facl(int fd, int cmd, int nentries, long aclbufp)
+solaris/classes/sun/nio/fs/SolarisNativeDispatcher.java:52:    private static native void init();
+solaris/classes/sun/nio/fs/SolarisWatchService.java:803:    private static native void init();
+solaris/classes/sun/nio/fs/SolarisWatchService.java:805:    private static native int portCreate() throws UnixException;
+solaris/classes/sun/nio/fs/SolarisWatchService.java:807:    private static native void portAssociate(int port, int source, long object, int events)
+solaris/classes/sun/nio/fs/SolarisWatchService.java:810:    private static native void portDissociate(int port, int source, long object)
+solaris/classes/sun/nio/fs/SolarisWatchService.java:813:    private static native void portSend(int port, int events)
+solaris/classes/sun/nio/fs/SolarisWatchService.java:816:    private static native int portGetn(int port, long address, int max)
+unix/classes/java/io/FileDescriptor.java:142:    private static native void initIDs();
+unix/classes/java/io/FileDescriptor.java:182:    private static native boolean getAppend(int fd);
+unix/classes/java/io/UnixFileSystem.java:321:    private static native void initIDs();
+unix/classes/java/lang/ProcessEnvironment.java:105:    private static native byte[][] environ();
+unix/classes/java/lang/ProcessImpl.java:642:    private static native void init();
+unix/classes/java/net/PlainDatagramSocketImpl.java:151:    private static native void init();
+unix/classes/java/net/PlainSocketImpl.java:144:    static native void initProto();
+unix/classes/sun/net/dns/ResolverConfigurationImpl.java:257:    static native String localDomain0();
+unix/classes/sun/net/dns/ResolverConfigurationImpl.java:259:    static native String fallbackDomain0();
+unix/classes/sun/net/PortConfig.java:87:    static native int getLower0();
+unix/classes/sun/net/PortConfig.java:88:    static native int getUpper0();
+unix/classes/sun/nio/ch/DatagramDispatcher.java:66:    static native int read0(FileDescriptor fd, long address, int len)
+unix/classes/sun/nio/ch/DatagramDispatcher.java:69:    static native long readv0(FileDescriptor fd, long address, int len)
+unix/classes/sun/nio/ch/DatagramDispatcher.java:72:    static native int write0(FileDescriptor fd, long address, int len)
+unix/classes/sun/nio/ch/DatagramDispatcher.java:75:    static native long writev0(FileDescriptor fd, long address, int len)
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:121:    static native int read0(FileDescriptor fd, long address, int len)
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:124:    static native int pread0(FileDescriptor fd, long address, int len,
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:127:    static native long readv0(FileDescriptor fd, long address, int len)
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:130:    static native int write0(FileDescriptor fd, long address, int len)
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:133:    static native int pwrite0(FileDescriptor fd, long address, int len,
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:136:    static native long writev0(FileDescriptor fd, long address, int len)
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:139:    static native int force0(FileDescriptor fd, boolean metaData)
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:142:    static native int truncate0(FileDescriptor fd, long size)
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:145:    static native int allocate0(FileDescriptor fd, long size)
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:148:    static native long size0(FileDescriptor fd) throws IOException;
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:150:    static native int lock0(FileDescriptor fd, boolean blocking, long pos,
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:153:    static native void release0(FileDescriptor fd, long pos, long size)
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:156:    static native void close0(FileDescriptor fd) throws IOException;
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:158:    static native void preClose0(FileDescriptor fd) throws IOException;
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:160:    static native void closeIntFD(int fd) throws IOException;
+unix/classes/sun/nio/ch/FileDispatcherImpl.java:162:    static native void init();
+unix/classes/sun/nio/ch/FileKey.java:66:    private static native void initIDs();
+unix/classes/sun/nio/ch/InheritedChannel.java:229:    private static native void initIDs();
+unix/classes/sun/nio/ch/InheritedChannel.java:230:    private static native int dup(int fd) throws IOException;
+unix/classes/sun/nio/ch/InheritedChannel.java:231:    private static native void dup2(int fd, int fd2) throws IOException;
+unix/classes/sun/nio/ch/InheritedChannel.java:232:    private static native int open0(String path, int oflag) throws IOException;
+unix/classes/sun/nio/ch/InheritedChannel.java:233:    private static native void close0(int fd) throws IOException;
+unix/classes/sun/nio/ch/InheritedChannel.java:234:    private static native int soType0(int fd);
+unix/classes/sun/nio/ch/InheritedChannel.java:235:    private static native InetAddress peerAddress0(int fd);
+unix/classes/sun/nio/ch/InheritedChannel.java:236:    private static native int peerPort0(int fd);
+unix/classes/sun/nio/ch/NativeThread.java:46:    public static native long current();
+unix/classes/sun/nio/ch/NativeThread.java:52:    public static native void signal(long nt);
+unix/classes/sun/nio/ch/NativeThread.java:54:    private static native void init();
+unix/classes/sun/nio/ch/PollArrayWrapper.java:123:    private static native void interrupt(int fd);
+unix/classes/sun/nio/ch/UnixAsynchronousServerSocketChannelImpl.java:349:    private static native void initIDs();
+unix/classes/sun/nio/ch/UnixAsynchronousSocketChannelImpl.java:747:    private static native void checkConnect(int fdVal) throws IOException;
+unix/classes/sun/nio/fs/UnixCopyFile.java:610:    static native void transfer(int dst, int src, long addressToPollForCancel)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:58:    static native byte[] getcwd();
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:63:    static native int dup(int filedes) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:76:    private static native int open0(long pathAddress, int flags, int mode)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:90:    private static native int openat0(int dfd, long pathAddress, int flags, int mode)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:101:    private static native void close0(int fd);
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:116:    private static native long fopen0(long pathAddress, long modeAddress)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:122:    static native void fclose(long stream) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:137:    private static native void link0(long existingAddress, long newAddress)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:151:    private static native void unlink0(long pathAddress) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:164:    private static native void unlinkat0(int dfd, long pathAddress, int flag)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:178:    private static native void mknod0(long pathAddress, int mode, long dev)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:194:    private static native void rename0(long fromAddress, long toAddress)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:210:    private static native void renameat0(int fromfd, long fromAddress, int tofd, long toAddress)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:224:    private static native void mkdir0(long pathAddress, int mode) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:237:    private static native void rmdir0(long pathAddress) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:252:    private static native byte[] readlink0(long pathAddress) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:267:    private static native byte[] realpath0(long pathAddress) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:282:    private static native void symlink0(long name1, long name2)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:296:    private static native void stat0(long pathAddress, UnixFileAttributes attrs)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:313:    private static native int stat1(long pathAddress);
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:327:    private static native void lstat0(long pathAddress, UnixFileAttributes attrs)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:333:    static native void fstat(int fd, UnixFileAttributes attrs) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:348:    private static native void fstatat0(int dfd, long pathAddress, int flag,
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:362:    private static native void chown0(long pathAddress, int uid, int gid)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:376:    private static native void lchown0(long pathAddress, int uid, int gid)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:382:    static native void fchown(int fd, int uid, int gid) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:395:    private static native void chmod0(long pathAddress, int mode)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:401:    static native void fchmod(int fd, int mode) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:416:    private static native void utimes0(long pathAddress, long times0, long times1)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:422:    static native void futimes(int fd, long times0, long times1) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:435:    private static native long opendir0(long pathAddress) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:440:    static native long fdopendir(int dfd) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:446:    static native void closedir(long dir) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:453:    static native byte[] readdir(long dir) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:458:    static native int read(int fildes, long buf, int nbyte) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:463:    static native int write(int fildes, long buf, int nbyte) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:476:    private static native void access0(long pathAddress, int amode) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:491:    private static native boolean exists0(long pathAddress);
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:499:    static native byte[] getpwuid(int uid) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:506:    static native byte[] getgrgid(int gid) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:521:    private static native int getpwnam0(long nameAddress) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:536:    private static native int getgrnam0(long nameAddress) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:551:    private static native void statvfs0(long pathAddress, UnixFileStoreAttributes attrs)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:565:    private static native long pathconf0(long pathAddress, int name)
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:571:    static native long fpathconf(int filedes, int name) throws UnixException;
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:576:    static native byte[] strerror(int errnum);
+unix/classes/sun/nio/fs/UnixNativeDispatcher.java:607:    private static native int init();
+windows/classes/java/io/FileDescriptor.java:172:    private static native void initIDs();
+windows/classes/java/io/FileDescriptor.java:174:    private static native long set(int d);
+windows/classes/java/io/WinNTFileSystem.java:609:    private static native int listRoots0();
+windows/classes/java/io/WinNTFileSystem.java:667:    private static native void initIDs();
+windows/classes/java/lang/ProcessEnvironment.java:298:    private static native String environmentBlock();
+windows/classes/java/lang/ProcessImpl.java:473:    private static native int getStillActive();
+windows/classes/java/lang/ProcessImpl.java:481:    private static native int getExitCodeProcess(long handle);
+windows/classes/java/lang/ProcessImpl.java:490:    private static native void waitForInterruptibly(long handle);
+windows/classes/java/lang/ProcessImpl.java:516:    private static native void waitForTimeoutInterruptibly(
+windows/classes/java/lang/ProcessImpl.java:550:    private static native void terminateProcess(long handle);
+windows/classes/java/lang/ProcessImpl.java:557:    private static native int getProcessId0(long handle);
+windows/classes/java/lang/ProcessImpl.java:564:    private static native boolean isProcessAlive(long handle);
+windows/classes/java/lang/ProcessImpl.java:615:    private static native long openForAtomicAppend(String path)
+windows/classes/java/lang/ProcessImpl.java:618:    private static native boolean closeHandle(long handle);
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:275:    private static native void initIDs();
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:277:    private static native int socketCreate(boolean v6Only);
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:279:    private static native void socketBind(int fd, InetAddress localAddress,
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:282:    private static native void socketConnect(int fd, InetAddress address, int port)
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:285:    private static native void socketDisconnect(int fd);
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:287:    private static native void socketClose(int fd);
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:289:    private static native int socketLocalPort(int fd) throws SocketException;
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:291:    private static native Object socketLocalAddress(int fd) throws SocketException;
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:293:    private static native int socketReceiveOrPeekData(int fd, DatagramPacket packet,
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:296:    private static native void socketSend(int fd, byte[] data, int offset, int length,
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:299:    private static native void socketSetIntOption(int fd, int cmd,
+windows/classes/java/net/DualStackPlainDatagramSocketImpl.java:302:    private static native int socketGetIntOption(int fd, int cmd) throws SocketException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:272:    static native void initIDs();
+windows/classes/java/net/DualStackPlainSocketImpl.java:274:    static native int socket0(boolean stream, boolean v6Only) throws IOException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:276:    static native void bind0(int fd, InetAddress localAddress, int localport,
+windows/classes/java/net/DualStackPlainSocketImpl.java:280:    static native int connect0(int fd, InetAddress remote, int remotePort)
+windows/classes/java/net/DualStackPlainSocketImpl.java:283:    static native void waitForConnect(int fd, int timeout) throws IOException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:285:    static native int localPort0(int fd) throws IOException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:287:    static native void localAddress(int fd, InetAddressContainer in) throws SocketException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:289:    static native void listen0(int fd, int backlog) throws IOException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:291:    static native int accept0(int fd, InetSocketAddress[] isaa) throws IOException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:293:    static native void waitForNewConnection(int fd, int timeout) throws IOException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:295:    static native int available0(int fd) throws IOException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:297:    static native void close0(int fd) throws IOException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:299:    static native void shutdown0(int fd, int howto) throws IOException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:301:    static native void setIntOption(int fd, int cmd, int optionValue) throws SocketException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:303:    static native int getIntOption(int fd, int cmd) throws SocketException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:305:    static native void sendOOB(int fd, int data) throws IOException;
+windows/classes/java/net/DualStackPlainSocketImpl.java:307:    static native void configureBlocking(int fd, boolean blocking) throws IOException;
+windows/classes/java/net/TwoStacksPlainDatagramSocketImpl.java:221:    private static native void init();
+windows/classes/java/net/TwoStacksPlainSocketImpl.java:224:    static native void initProto();
+windows/classes/sun/io/Win32ErrorMode.java:80:    private static native long setErrorMode(long mode);
+windows/classes/sun/net/dns/ResolverConfigurationImpl.java:156:    static native void init0();
+windows/classes/sun/net/dns/ResolverConfigurationImpl.java:158:    static native void loadDNSconfig0();
+windows/classes/sun/net/dns/ResolverConfigurationImpl.java:160:    static native int notifyAddrChange0();
+windows/classes/sun/net/PortConfig.java:63:    static native int getLower0();
+windows/classes/sun/net/PortConfig.java:64:    static native int getUpper0();
+windows/classes/sun/net/www/protocol/http/ntlm/NTLMAuthSequence.java:90:    private static native void initFirst (Class<NTLMAuthSequence.Status> clazz);
+windows/classes/sun/nio/ch/DatagramDispatcher.java:62:    static native int read0(FileDescriptor fd, long address, int len)
+windows/classes/sun/nio/ch/DatagramDispatcher.java:65:    static native long readv0(FileDescriptor fd, long address, int len)
+windows/classes/sun/nio/ch/DatagramDispatcher.java:68:    static native int write0(FileDescriptor fd, long address, int len)
+windows/classes/sun/nio/ch/DatagramDispatcher.java:71:    static native long writev0(FileDescriptor fd, long address, int len)
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:145:    static native int read0(FileDescriptor fd, long address, int len)
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:148:    static native int pread0(FileDescriptor fd, long address, int len,
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:151:    static native long readv0(FileDescriptor fd, long address, int len)
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:154:    static native int write0(FileDescriptor fd, long address, int len, boolean append)
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:157:    static native int pwrite0(FileDescriptor fd, long address, int len,
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:160:    static native long writev0(FileDescriptor fd, long address, int len, boolean append)
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:163:    static native int force0(FileDescriptor fd, boolean metaData)
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:166:    static native int truncate0(FileDescriptor fd, long size)
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:169:    static native long size0(FileDescriptor fd) throws IOException;
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:171:    static native int lock0(FileDescriptor fd, boolean blocking, long pos,
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:174:    static native void release0(FileDescriptor fd, long pos, long size)
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:177:    static native void close0(FileDescriptor fd) throws IOException;
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:179:    static native void closeByHandle(long fd) throws IOException;
+windows/classes/sun/nio/ch/FileDispatcherImpl.java:181:    static native long duplicateHandle(long fd) throws IOException;
+windows/classes/sun/nio/ch/FileKey.java:69:    private static native void initIDs();
+windows/classes/sun/nio/ch/Iocp.java:420:    private static native void initIDs();
+windows/classes/sun/nio/ch/Iocp.java:422:    private static native long createIoCompletionPort(long handle,
+windows/classes/sun/nio/ch/Iocp.java:425:    private static native void close0(long handle);
+windows/classes/sun/nio/ch/Iocp.java:427:    private static native void getQueuedCompletionStatus(long completionPort,
+windows/classes/sun/nio/ch/Iocp.java:430:    private static native void postQueuedCompletionStatus(long completionPort,
+windows/classes/sun/nio/ch/Iocp.java:433:    private static native String getErrorMessage(int error);
+windows/classes/sun/nio/ch/SocketDispatcher.java:67:    static native int read0(FileDescriptor fd, long address, int len)
+windows/classes/sun/nio/ch/SocketDispatcher.java:70:    static native long readv0(FileDescriptor fd, long address, int len)
+windows/classes/sun/nio/ch/SocketDispatcher.java:73:    static native int write0(FileDescriptor fd, long address, int len)
+windows/classes/sun/nio/ch/SocketDispatcher.java:76:    static native long writev0(FileDescriptor fd, long address, int len)
+windows/classes/sun/nio/ch/SocketDispatcher.java:79:    static native void preClose0(FileDescriptor fd) throws IOException;
+windows/classes/sun/nio/ch/SocketDispatcher.java:81:    static native void close0(FileDescriptor fd) throws IOException;
+windows/classes/sun/nio/ch/WindowsAsynchronousFileChannelImpl.java:722:    private static native int readFile(long handle, long address, int len,
+windows/classes/sun/nio/ch/WindowsAsynchronousFileChannelImpl.java:725:    private static native int writeFile(long handle, long address, int len,
+windows/classes/sun/nio/ch/WindowsAsynchronousFileChannelImpl.java:728:    private static native int lockFile(long handle, long position, long size,
+windows/classes/sun/nio/ch/WindowsAsynchronousFileChannelImpl.java:731:    private static native void close0(long handle);
+windows/classes/sun/nio/ch/WindowsAsynchronousServerSocketChannelImpl.java:351:    private static native void initIDs();
+windows/classes/sun/nio/ch/WindowsAsynchronousServerSocketChannelImpl.java:353:    private static native int accept0(long listenSocket, long acceptSocket,
+windows/classes/sun/nio/ch/WindowsAsynchronousServerSocketChannelImpl.java:356:    private static native void updateAcceptContext(long listenSocket,
+windows/classes/sun/nio/ch/WindowsAsynchronousServerSocketChannelImpl.java:359:    private static native void closesocket0(long socket) throws IOException;
+windows/classes/sun/nio/ch/WindowsAsynchronousSocketChannelImpl.java:912:    private static native void initIDs();
+windows/classes/sun/nio/ch/WindowsAsynchronousSocketChannelImpl.java:914:    private static native int connect0(long socket, boolean preferIPv6,
+windows/classes/sun/nio/ch/WindowsAsynchronousSocketChannelImpl.java:917:    private static native void updateConnectContext(long socket) throws IOException;
+windows/classes/sun/nio/ch/WindowsAsynchronousSocketChannelImpl.java:919:    private static native int read0(long socket, int count, long addres, long overlapped)
+windows/classes/sun/nio/ch/WindowsAsynchronousSocketChannelImpl.java:922:    private static native int write0(long socket, int count, long address,
+windows/classes/sun/nio/ch/WindowsAsynchronousSocketChannelImpl.java:925:    private static native void shutdown0(long socket, int how) throws IOException;
+windows/classes/sun/nio/ch/WindowsAsynchronousSocketChannelImpl.java:927:    private static native void closesocket0(long socket) throws IOException;
+windows/classes/sun/nio/fs/RegistryFileTypeDetector.java:70:    private static native String queryStringValue(long subKey, long name);
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:47:    static native long CreateEvent(boolean bManualReset, boolean bInitialState)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:91:    private static native long CreateFile0(long lpFileName,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:104:    static native void CloseHandle(long handle);
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:119:    private static native void DeleteFile0(long lpFileName)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:136:    private static native void CreateDirectory0(long lpFileName, long lpSecurityAttributes)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:152:    private static native void RemoveDirectory0(long lpFileName)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:162:    static native void DeviceIoControlSetSparse(long handle)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:172:    static native void DeviceIoControlGetReparsePoint(long handle,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:201:    private static native void FindFirstFile0(long lpFileName, FirstFile obj)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:218:    private static native long FindFirstFile1(long lpFileName, long address)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:229:    static native String FindNextFile(long handle, long address)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:260:    private static native void FindFirstStream0(long lpFileName, FirstStream obj)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:269:    static native String FindNextStream(long handle) throws WindowsException;
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:276:    static native void FindClose(long handle) throws WindowsException;
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:284:    static native void GetFileInformationByHandle(long handle, long address)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:311:    private static native void CopyFileEx0(long existingAddress, long newAddress,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:333:    private static native void MoveFileEx0(long existingAddress, long newAddress,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:349:    private static native int GetFileAttributes0(long lpFileName)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:367:    private static native void SetFileAttributes0(long lpFileName,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:385:    private static native void GetFileAttributesEx0(long lpFileName, long address)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:395:    static native void SetFileTime(long handle,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:406:    static native void SetEndOfFile(long handle) throws WindowsException;
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:411:    static native int GetLogicalDrives() throws WindowsException;
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:449:    private static native void GetVolumeInformation0(long lpRoot,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:466:    private static native int GetDriveType0(long lpRoot) throws WindowsException;
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:498:    private static native void GetDiskFreeSpaceEx0(long lpDirectoryName,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:520:    private static native String GetVolumePathName0(long lpFileName)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:530:    static native void InitializeSecurityDescriptor(long sdAddress)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:540:    static native void InitializeAcl(long aclAddress, int size)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:565:    private static native int GetFileSecurity0(long lpFileName,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:590:    static native void SetFileSecurity0(long lpFileName, int securityInformation,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:602:    static native long GetSecurityDescriptorOwner(long pSecurityDescriptor)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:612:    static native void SetSecurityDescriptorOwner(long pSecurityDescriptor,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:624:    static native long GetSecurityDescriptorDacl(long pSecurityDescriptor);
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:634:    static native void SetSecurityDescriptorDacl(long pSecurityDescriptor, long pAcl)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:657:    private static native void GetAclInformation0(long aclAddress,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:667:    static native long GetAce(long aclAddress, int aceIndex);
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:678:    static native void AddAccessAllowedAceEx(long aclAddress, int flags,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:690:    static native void AddAccessDeniedAceEx(long aclAddress, int flags,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:719:    private static native void LookupAccountSid0(long sidAddress, Account obj)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:746:    private static native int LookupAccountName0(long lpAccountName, long pSid,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:754:    static native int GetLengthSid(long sidAddress);
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:764:    static native String ConvertSidToStringSid(long sidAddress)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:785:    private static native long ConvertStringSidToSid0(long lpStringSid)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:791:    static native long GetCurrentProcess();
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:796:    static native long GetCurrentThread();
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:805:    static native long OpenProcessToken(long hProcess, int desiredAccess)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:816:    static native long OpenThreadToken(long hThread, int desiredAccess,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:821:    static native long DuplicateTokenEx(long hThread, int desiredAccess)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:830:    static native void SetThreadToken(long thread, long hToken)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:842:    static native int GetTokenInformation(long token, int tokenInfoClass,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:855:    static native void AdjustTokenPrivileges(long token, long luid, int attributes)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:871:    static native boolean AccessCheck(long token, long securityInfo, int accessMask,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:885:    private static native long LookupPrivilegeValue0(long lpName)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:908:    private static native void CreateSymbolicLink0(long linkAddress,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:930:    private static native void CreateHardLink0(long newFileBuffer,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:949:    private static native String GetFullPathName0(long pathAddress)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:960:    static native String GetFinalPathNameByHandle(long handle)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:974:    static native String FormatMessage(int errorCode);
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:981:    static native void LocalFree(long address);
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:991:    static native long CreateIoCompletionPort(long fileHandle, long existingPort,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:1020:    private static native void GetQueuedCompletionStatus0(long completionPort,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:1031:    static native void PostQueuedCompletionStatus(long completionPort,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:1046:    static native void ReadDirectoryChangesW(long hDirectory,
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:1061:    static native void CancelIo(long hFile) throws WindowsException;
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:1071:    static native int GetOverlappedResult(long hFile, long lpOverlapped)
+windows/classes/sun/nio/fs/WindowsNativeDispatcher.java:1103:    private static native void initIDs();
+windows/classes/sun/security/provider/NativeSeedGenerator.java:55:    private static native boolean nativeGenerateSeed(byte[] result);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:833:    private static native boolean initialize();
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:834:    private static native String getDefaultLocale(int cat);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:837:    private static native String getDateTimePattern(int dateStyle, int timeStyle, String langTag);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:838:    private static native int getCalendarID(String langTag);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:841:    private static native String[] getAmPmStrings(String langTag, String[] ampm);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:842:    private static native String[] getEras(String langTag, String[] eras);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:843:    private static native String[] getMonths(String langTag, String[] months);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:844:    private static native String[] getShortMonths(String langTag, String[] smonths);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:845:    private static native String[] getWeekdays(String langTag, String[] wdays);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:846:    private static native String[] getShortWeekdays(String langTag, String[] swdays);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:849:    private static native String getNumberPattern(int numberStyle, String langTag);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:850:    private static native boolean isNativeDigit(String langTag);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:853:    private static native String getCurrencySymbol(String langTag, String currencySymbol);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:854:    private static native char getDecimalSeparator(String langTag, char decimalSeparator);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:855:    private static native char getGroupingSeparator(String langTag, char groupingSeparator);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:856:    private static native String getInfinity(String langTag, String infinity);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:857:    private static native String getInternationalCurrencySymbol(String langTag, String internationalCurrencySymbol);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:858:    private static native char getMinusSign(String langTag, char minusSign);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:859:    private static native char getMonetaryDecimalSeparator(String langTag, char monetaryDecimalSeparator);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:860:    private static native String getNaN(String langTag, String nan);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:861:    private static native char getPercent(String langTag, char percent);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:862:    private static native char getPerMill(String langTag, char perMill);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:863:    private static native char getZeroDigit(String langTag, char zeroDigit);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:866:    private static native int getCalendarDataValue(String langTag, int type);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:869:    private static native String[] getCalendarDisplayStrings(String langTag, int calid, int field, int style);
+windows/classes/sun/util/locale/provider/HostLocaleProviderAdapterImpl.java:872:    private static native String getDisplayString(String langTag, int key, String value);
